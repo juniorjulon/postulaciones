@@ -1,0 +1,1190 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Entrevista Habitat Inversiones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: banda de mercado tipo pizarra + barra de 3 pestañas fija; contenido en columna de lectura con tablas a ancho completo. */
+:root{
+  --bg:#EEF1F5; --surface:#FFFFFF; --surface-2:#F5F7FA; --ink:#0D1522; --ink-2:#2B3647; --muted:#596476;
+  --line:#D5DCE6; --line-strong:#B7C2D1;
+  --accent:#1A4FB5; --accent-strong:#123B8A; --accent-ink:#FFFFFF; --accent-soft:#E4ECFA;
+  --navy:#0A1A33; --navy-2:#112649; --mast-ink:#E9EFF8; --mast-muted:#A3B3CC; --mast-line:#24395E; --mast-up:#5BD69A; --mast-down:#FF8A80;
+  --up:#167A46; --down:#B3261E; --warn:#7A5200; --warn-soft:#FFF3D6;
+  --font-display:"Montserrat","Segoe UI",Arial,sans-serif;
+  --font-body:"Open Sans","Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A0F17; --surface:#111925; --surface-2:#172131; --ink:#E7EDF6; --ink-2:#C6D0DE; --muted:#97A4B7;
+    --line:#243246; --line-strong:#33445D;
+    --accent:#7EA6FF; --accent-strong:#A8C3FF; --accent-ink:#0A0F17; --accent-soft:#16253F;
+    --navy:#060C16; --navy-2:#0D1A2E; --mast-line:#1C2C46;
+    --up:#4CC38A; --down:#FF7B72; --warn:#F2C14E; --warn-soft:#2A2210;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A0F17; --surface:#111925; --surface-2:#172131; --ink:#E7EDF6; --ink-2:#C6D0DE; --muted:#97A4B7;
+  --line:#243246; --line-strong:#33445D;
+  --accent:#7EA6FF; --accent-strong:#A8C3FF; --accent-ink:#0A0F17; --accent-soft:#16253F;
+  --navy:#060C16; --navy-2:#0D1A2E; --mast-line:#1C2C46;
+  --up:#4CC38A; --down:#FF7B72; --warn:#F2C14E; --warn-soft:#2A2210;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:var(--accent);text-underline-offset:2px;text-decoration-thickness:1px}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--font-display);text-wrap:balance;margin:0;color:var(--ink)}
+h2{font-size:26px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+h3{font-size:19px;font-weight:700;line-height:1.3}
+h4{font-size:15px;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--font-display);font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:16.5px;color:var(--ink-2);max-width:74ch}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+.stack{display:flex;flex-direction:column;gap:14px}
+.stack-lg{display:flex;flex-direction:column;gap:22px}
+.prose{max-width:78ch;display:flex;flex-direction:column;gap:12px}
+.prose ul,.bul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+
+/* Masthead */
+.mast{background:var(--navy);color:var(--mast-ink)}
+.mast .wrap{padding-block:30px 8px}
+.mast h1{color:#FFFFFF;font-size:clamp(25px,4.2vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.15;max-width:22ch}
+.mast .eyebrow{color:#8FB2FF}
+.mast-sub{color:var(--mast-muted);max-width:70ch;margin-top:10px;font-size:15.5px}
+.mast-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.mast-tag{border:1px solid var(--mast-line);background:var(--navy-2);color:var(--mast-ink);font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px 16px;margin-top:26px;padding-bottom:8px;border-bottom:1px solid var(--mast-line)}
+.board-head .lbl{font-family:var(--font-display);font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8FB2FF}
+.board-head .dt{font-size:12px;color:var(--mast-muted)}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));column-gap:20px}
+.tick{padding:11px 0;border-bottom:1px solid var(--mast-line);min-width:0}
+.tick .k{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mast-muted)}
+.tick .v{font-family:var(--font-display);font-weight:700;font-size:19px;font-variant-numeric:tabular-nums;color:#FFFFFF;line-height:1.3}
+.tick .c{font-size:12.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.tick .c.up{color:var(--mast-up)} .tick .c.down{color:var(--mast-down)} .tick .c.flat{color:var(--mast-muted)}
+.tick .d{font-size:11px;color:var(--mast-muted)}
+.mast-foot{font-size:11.5px;color:var(--mast-muted);padding-block:10px 18px}
+
+/* Tabs */
+.tabbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.tablist{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tablist::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;cursor:pointer;font-family:var(--font-display);font-weight:600;font-size:14px;color:var(--muted);padding:15px 14px 13px;border-bottom:3px solid transparent;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:4px;border:1px solid var(--line);background:var(--surface-2);font-size:12px;font-weight:700;color:var(--muted)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tab[aria-selected="true"] .n{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* Panels */
+.panel{padding-block:34px 72px}
+.panel-head{display:flex;flex-direction:column;gap:10px;margin-bottom:8px}
+.block{margin-top:38px;padding-top:28px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+.block-head{display:flex;flex-direction:column;gap:6px}
+.anchor{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 76px)}
+.keypoints{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+.kp{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.kp b{font-family:var(--font-display);font-size:14.5px}
+.kp p{color:var(--ink-2);font-size:14px}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+table.wide{min-width:880px}
+table.mid{min-width:680px}
+th{text-align:left;font-family:var(--font-display);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);background:var(--surface-2);padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+td:first-child{color:var(--ink)}
+tr:last-child td{border-bottom:0}
+td ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px}
+td .t{font-family:var(--font-display);font-weight:700;color:var(--ink);font-size:14px;line-height:1.35}
+td .s{font-size:12.5px;color:var(--muted)}
+tr.group td{background:var(--surface-2);font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding:9px 14px}
+.nowrap{white-space:nowrap}
+
+/* Pills */
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--muted);white-space:nowrap;line-height:1.6}
+.pill.read{background:var(--accent-soft);border-color:transparent;color:var(--accent-strong)}
+.pill.ref{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
+.pill.open{color:var(--up);border-color:currentColor;background:transparent}
+.pill.fo{color:var(--accent-strong);background:var(--accent-soft);border-color:transparent}
+.tagcat{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-strong);background:var(--accent-soft);padding:2px 8px;border-radius:4px;white-space:nowrap}
+
+/* Frequency bars */
+.freq{display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink);white-space:nowrap}
+.freq .bar{width:74px;height:7px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden;flex:none}
+.freq .bar i{display:block;height:100%;background:var(--accent)}
+.imp{font-weight:700;font-size:12.5px;white-space:nowrap}
+.imp.h{color:var(--accent-strong)} .imp.m{color:var(--ink-2)} .imp.l{color:var(--muted)}
+
+/* Notes */
+.note{background:var(--warn-soft);border-radius:8px;padding:14px 16px;color:var(--ink);display:flex;flex-direction:column;gap:6px;max-width:90ch}
+.note h4{color:var(--warn);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.note ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.info{background:var(--accent-soft);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;max-width:90ch}
+.info h4{color:var(--accent-strong);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+
+/* Card grid */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card h4{font-size:15.5px}
+.card .meta{font-size:12.5px;color:var(--muted)}
+.fact{display:flex;flex-direction:column;gap:2px;padding:12px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact .fv{font-family:var(--font-display);font-weight:800;font-size:24px;font-variant-numeric:tabular-nums;color:var(--ink);line-height:1.2}
+.fact .fl{font-size:13.5px;color:var(--ink-2)}
+
+/* Org chart */
+.org{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+.org-row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.org-node{border:1px solid var(--line-strong);border-radius:6px;padding:11px 14px;background:var(--surface);display:flex;flex-direction:column;gap:2px;min-width:0}
+.org-node b{font-family:var(--font-display);font-size:14px}
+.org-node span{font-size:12.5px;color:var(--muted)}
+.org-node.top{background:var(--navy);border-color:var(--navy);max-width:420px;align-self:center;width:100%;text-align:center}
+.org-node.top b{color:#FFFFFF} .org-node.top span{color:var(--mast-muted)}
+.org-node.focus{border:2px solid var(--accent);background:var(--accent-soft)}
+.org-node.support{border-style:dashed}
+.org-lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center}
+
+/* Formula */
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.f{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.f .fn{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--ink)}
+.f .fx{font-variant-numeric:tabular-nums;font-size:14.5px;color:var(--ink);background:var(--surface-2);border-radius:4px;padding:7px 10px;overflow-x:auto;white-space:nowrap}
+.f .fd{font-size:13px;color:var(--muted)}
+.example{border:1px dashed var(--line-strong);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;max-width:90ch;background:var(--surface)}
+.example b.h{font-family:var(--font-display);font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-strong)}
+
+/* Steps */
+.progress{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.progress .track{flex:1 1 200px;max-width:360px;height:8px;background:var(--surface);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.progress .track i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.step{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:16px 18px;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:0}
+.step-n{font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
+.step-main{display:flex;flex-direction:column;gap:6px;min-width:0}
+.step-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.step-top h4{font-size:15.5px}
+.step p{color:var(--ink-2);font-size:14px}
+.step .out{font-size:13px;color:var(--muted)}
+.chk{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap}
+.chk input{width:16px;height:16px;accent-color:var(--accent)}
+.step.done .step-n{color:var(--muted)}
+.step.done h4{color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+.go{appearance:none;border:0;background:none;padding:0;font:inherit;font-size:13px;font-weight:700;color:var(--accent);cursor:pointer;text-align:left}
+.go:hover{text-decoration:underline}
+
+/* Subnav */
+.subnav{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.subnav button{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:6px 14px;font-family:var(--font-display);font-weight:600;font-size:13px;cursor:pointer}
+.subnav button:hover{border-color:var(--accent);color:var(--accent)}
+.sec{margin-top:44px;display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;flex-direction:column;gap:6px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.sec-head h2 .idx{color:var(--accent);margin-right:6px}
+.sub{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.sub h3{display:flex;align-items:baseline;gap:10px}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13.5px}
+.links a{font-weight:600}
+.timeline{display:flex;flex-direction:column}
+.tl{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.tl:last-child{border-bottom:0}
+.tl .when{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums}
+.tl.next .when{color:var(--accent)}
+.tl p{color:var(--ink-2)}
+
+/* Q&A */
+.qa-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.qa-chip{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:6px 13px;font-family:var(--font-display);font-weight:600;font-size:13px;cursor:pointer}
+.qa-chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.qa-search{flex:1 1 220px;max-width:340px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:8px 12px;font:inherit;font-size:14px}
+.qa-count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.qa-toggle{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:6px;padding:7px 12px;font-weight:600;font-size:13px;cursor:pointer;font-family:inherit}
+.qa-list{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0 18px}
+.qa-item{border-bottom:1px solid var(--line)}
+.qa-item:last-child{border-bottom:0}
+.qa-item summary{list-style:none;cursor:pointer;padding:14px 28px 14px 0;display:flex;gap:12px;align-items:baseline;position:relative}
+.qa-item summary::-webkit-details-marker{display:none}
+.qa-item summary::after{content:"+";position:absolute;right:2px;top:12px;font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--muted)}
+.qa-item[open] summary::after{content:"\2212"}
+.qa-item .qn{font-family:var(--font-display);font-weight:700;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:28px}
+.qa-item .qq{font-family:var(--font-display);font-weight:600;font-size:15px;color:var(--ink);line-height:1.4;flex:1;min-width:0}
+.qa-body{padding:0 0 16px 40px;display:flex;flex-direction:column;gap:10px;max-width:88ch}
+.qa-body p{color:var(--ink-2)}
+.qa-empty{padding:18px 0;color:var(--muted)}
+
+.thesis{counter-reset:th;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.thesis li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;counter-increment:th}
+.thesis li::before{content:counter(th);font-family:var(--font-display);font-weight:800;color:var(--accent);font-size:18px}
+.thesis li b{font-family:var(--font-display);font-size:14px}
+.thesis li span{font-size:13.5px;color:var(--ink-2)}
+
+footer.foot{border-top:1px solid var(--line);padding-block:22px 40px;color:var(--muted);font-size:12.5px}
+
+@media (max-width:640px){
+  h2{font-size:22px}
+  .step{grid-template-columns:36px 1fr;padding:14px}
+  .step-n{font-size:20px}
+  .qa-body{padding-left:0}
+  .tl{grid-template-columns:76px 1fr}
+  .tick .v{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">AFP Habitat Perú · Gerencia de Inversiones</div>
+    <h1>Guía para la entrevista de Practicante de Inversiones</h1>
+    <p class="mast-sub">Enfoque en renta variable, con la renta fija, los derivados y el sistema de pensiones que también te pueden preguntar. Preparada el 18 de octubre de 2026 con datos de mercado al 16 de octubre.</p>
+    <div class="mast-tags">
+      <span class="mast-tag">Entrevista: ~21-oct-2026</span>
+      <span class="mast-tag">Perfil: 7.º–8.º ciclo · llevó Renta Fija</span>
+      <span class="mast-tag">Sin cursos de Renta Variable ni Derivados</span>
+    </div>
+
+    <div class="board-head"><span class="lbl">Pizarra de mercado</span><span class="dt">Cierres al 16-oct-2026 salvo indicación</span></div>
+    <div class="board">
+      <div class="tick"><div class="k">S&amp;P 500</div><div class="v">7.659</div><div class="c up">+11,9% en 2026</div><div class="d">16-oct · récord ~7.819 el 6-oct</div></div>
+      <div class="tick"><div class="k">Nasdaq</div><div class="v">26.140</div><div class="c up">+12,5% en 2026</div><div class="d">16-oct · −4,5% en la semana</div></div>
+      <div class="tick"><div class="k">KOSPI (Corea)</div><div class="v">5.668</div><div class="c down">−40% vs. máximo de junio</div><div class="d">16-oct · +51% a 12 meses</div></div>
+      <div class="tick"><div class="k">CSI 300 (China)</div><div class="v">4.171</div><div class="c down">−7,6% a 12 meses</div><div class="d">16-oct · mínimo de 13 meses</div></div>
+      <div class="tick"><div class="k">BVL Índice General</div><div class="v">&gt;60.000</div><div class="c up">≈+37% en 2026</div><div class="d">superó 60.000 el 2-oct</div></div>
+      <div class="tick"><div class="k">Ibovespa</div><div class="v">≈207.000</div><div class="c up">+8% el 5-oct, récord</div><div class="d">tras 1.ª vuelta en Brasil</div></div>
+      <div class="tick"><div class="k">Fed</div><div class="v">3,75–4,00%</div><div class="c flat">+25 pb el 16-sep</div><div class="d">próxima: 27–28 oct</div></div>
+      <div class="tick"><div class="k">BCE (depósito)</div><div class="v">2,50%</div><div class="c flat">+25 pb el 16-sep</div><div class="d">próxima: 29 oct</div></div>
+      <div class="tick"><div class="k">BCRP</div><div class="v">4,25%</div><div class="c flat">sin cambios desde sep-2025</div><div class="d">próxima: 12 nov</div></div>
+      <div class="tick"><div class="k">Bono EE.UU. 10 años</div><div class="v">≈5,1–5,2%</div><div class="c flat">tocó ~5,35% a inicios de oct</div><div class="d">octubre</div></div>
+      <div class="tick"><div class="k">Inflación EE.UU.</div><div class="v">3,7%</div><div class="c flat">subyacente 2,6%</div><div class="d">septiembre</div></div>
+      <div class="tick"><div class="k">Inflación Perú</div><div class="v">4,5%</div><div class="c flat">sobre la meta de 1–3%</div><div class="d">septiembre</div></div>
+      <div class="tick"><div class="k">Cobre</div><div class="v">≈US$14.500/t</div><div class="c up">cerca de máximos</div><div class="d">13-oct</div></div>
+      <div class="tick"><div class="k">Brent · USD/PEN</div><div class="v">≈US$100 · 3,44</div><div class="c flat">petróleo por Irán</div><div class="d">2-oct · 13-oct</div></div>
+    </div>
+    <p class="mast-foot">Fuentes en la pestaña 3. Los precios cambian a diario: el día de la entrevista revisa el cierre previo.</p>
+  </div>
+</header>
+
+<nav class="tabbar" aria-label="Secciones">
+  <div class="wrap">
+    <div class="tablist" role="tablist">
+      <button class="tab" role="tab" id="tab-convocatorias" data-tab="convocatorias" aria-controls="panel-convocatorias" aria-selected="true"><span class="n">1</span>Convocatorias</button>
+      <button class="tab" role="tab" id="tab-funciones" data-tab="funciones" aria-controls="panel-funciones" aria-selected="false" tabindex="-1"><span class="n">2</span>Funciones, requisitos y ruta</button>
+      <button class="tab" role="tab" id="tab-guia" data-tab="guia" aria-controls="panel-guia" aria-selected="false" tabindex="-1"><span class="n">3</span>Guía de estudio y preguntas</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- =========================== PESTAÑA 1 =========================== -->
+<section class="panel" id="panel-convocatorias" role="tabpanel" aria-labelledby="tab-convocatorias">
+  <div class="wrap">
+    <div class="panel-head">
+      <div class="eyebrow">Pestaña 1</div>
+      <h2>Convocatorias actuales y pasadas</h2>
+      <p class="lead">Habitat no publica un puesto llamado "Practicante de Renta Variable". El puesto que se recluta es <b>Practicante de Inversiones</b>, y sus funciones incluyen atender a la jefatura de Renta Variable junto con las de Renta Fija y Alternativos.</p>
+    </div>
+
+    <div class="keypoints">
+      <div class="kp"><b>El puesto es mixto</b><p>La convocatoria de junio de 2026 pide preparar reportes para las jefaturas de Renta Variable, Renta Fija y Alternativos, y presentaciones para el Comité de Inversiones.</p></div>
+      <div class="kp"><b>Más datos que valuación</b><p>Desde 2025 las convocatorias piden bases de datos, estimar el benchmark de los fondos y automatizar con SQL, Power BI, Python o VBA.</p></div>
+      <div class="kp"><b>El alumno encaja</b><p>Piden 7.º a 9.º ciclo de Economía, Finanzas, Administración, Ingeniería Empresarial o afines, Excel intermedio-avanzado e inglés intermedio. Ninguna pide CFA.</p></div>
+    </div>
+
+    <!-- Actual -->
+    <div class="block">
+      <div class="block-head">
+        <div class="eyebrow">Convocatoria actual</div>
+        <h3>Practicante de Inversiones · octubre 2026</h3>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="pill ref">Referencia en LinkedIn</span><span class="pill fo">Front office</span></div>
+          <h4>AFP Habitat Perú · Practicante de Inversiones</h4>
+          <p class="meta">Publicada en LinkedIn en la primera quincena de octubre de 2026. La compartió el Investment Director de Habitat.</p>
+          <div>
+            <p><b>Funciones:</b> apoyar en análisis financiero, seguimiento de portafolios, benchmarking y elaboración de modelos de renta fija y renta variable.</p>
+          </div>
+          <div>
+            <p><b>Perfil:</b> estudiantes de Economía, Administración o carreras afines con conocimientos de mercado financiero.</p>
+          </div>
+          <p class="small muted">Beneficios, modalidad y fecha de cierre: no publicados en el extracto disponible.</p>
+          <div class="links"><a href="https://www.linkedin.com/in/roger-mogrovejo-14863511/" target="_blank" rel="noopener">Perfil donde se compartió el post (requiere sesión de LinkedIn)</a></div>
+        </div>
+        <div class="stack">
+          <div class="note">
+            <h4>Pendiente</h4>
+            <p class="small">No pude abrir el post original de LinkedIn. Que el alumno lo busque con su sesión, o que le pida la descripción del puesto a la persona que lo contactó. Pregunta útil: si reportará a la jefatura de Renta Variable o rotará entre las tres.</p>
+          </div>
+          <div class="card">
+            <h4>Otras convocatorias vigentes de Habitat</h4>
+            <p class="small">En practicas.pe la única oferta vigente de Habitat al 18-oct es <b>Practicante de Auditoría de Procesos</b> (ID 69625), que no es del área de inversiones.</p>
+            <div class="links"><a href="https://www.practicas.pe/pre-profesional-en-practicas-afp-habitat-470.html" target="_blank" rel="noopener">Listado de Habitat en practicas.pe</a><a href="https://www.practicas.pe/oferta-convocatoria-practicante-auditoria-procesos-practicas-afp-habitat-lima-69625.html" target="_blank" rel="noopener">Auditoría de Procesos (vigente)</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pasadas -->
+    <div class="block">
+      <div class="block-head">
+        <div class="eyebrow">Convocatorias pasadas · Habitat</div>
+        <h3>Siete convocatorias del área de inversiones, 2021–2026</h3>
+        <p class="muted small">Ordenadas de la más reciente a la más antigua por fecha de cierre. Todas se abrieron y leyeron en practicas.pe; la fecha de publicación no figura en el portal.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table class="wide">
+          <thead><tr><th>Cierre</th><th>Puesto</th><th>Requisitos</th><th>Funciones principales</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="nowrap num"><b>21-sep-2026</b></td>
+              <td><div class="t">Practicante de Control de Inversiones</div><div class="s">ID 68807 · preprofesional · híbrido</div><span class="pill">Middle office</span></td>
+              <td><ul><li>Economía, Ing. Industrial, Administración o afines</li><li>Excel avanzado</li><li>Python e inglés intermedio (deseables)</li></ul></td>
+              <td><ul><li>Descargar a diario los vectores de precios y derivados que envía la SBS</li><li>Reportes de variación de precios y valorización de derivados</li><li>Validar y reconfirmar operaciones con contrapartes</li><li>Seguimiento de operaciones en el banco custodio del exterior</li><li>Apoyo en valorización de portafolios e interfaz contable</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-control-inversiones-practicas-afp-habitat-lima-68807.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td class="nowrap num"><b>09-ago-2026</b></td>
+              <td><div class="t">Practicante de Riesgos de Inversión</div><div class="s">ID 67513 · profesional · híbrido</div><span class="pill">Riesgos</span></td>
+              <td><ul><li>Egresado de Economía o Ing. Económica</li><li>VBA y Python/R avanzados; Power BI e inglés intermedio</li><li>Mercado de capitales</li><li>6 meses de prácticas previas</li><li>Bloomberg (deseable)</li></ul></td>
+              <td><ul><li>Automatizar reportes de derivados, VaR, tracking error y límites de inversión</li><li>Escenarios de estrés y líneas de crédito de emisores de renta fija</li><li>Monitoreo de fondos mutuos y ETFs</li><li>Presentaciones para los Comités de Riesgos de Inversión</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-riesgos-inversion-analisis-emisores-practicas-afp-habitat-lima-67513.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td class="nowrap num"><b>16-jun-2026</b></td>
+              <td><div class="t">Practicante de Inversiones</div><div class="s">ID 65415 · preprofesional · híbrido, San Isidro</div><span class="pill fo">Front office</span></td>
+              <td><ul><li>8.º o 9.º ciclo de Ing. Empresarial, Economía, Estadística o afines</li><li>Formación en gestión y análisis de datos</li><li>Pensamiento analítico, curiosidad, atención al detalle y paciencia para validar datos</li></ul></td>
+              <td><ul><li>Mantener las bases de datos de la Gerencia de Inversiones</li><li>Analizar datos para estimar el benchmark de los fondos</li><li>Presentaciones para el Comité de Inversiones y comerciales</li><li>Reportes y consultas para las jefaturas de <b>Renta Variable</b>, Renta Fija y Alternativos</li><li>Automatizar la recolección de datos financieros</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-practicas-afp-habitat-lima-65415.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td class="nowrap num"><b>01-dic-2025</b></td>
+              <td><div class="t">Practicante de Inversiones</div><div class="s">ID 56099 · preprofesional · híbrido</div><span class="pill fo">Front office</span></td>
+              <td><ul><li>8.º o 9.º ciclo de Ing. Empresarial, Economía, Estadística o afines</li><li>SQL Server, Power BI, Python, macros VBA</li><li>Excel intermedio-avanzado</li></ul></td>
+              <td><ul><li>Las mismas funciones que la de junio de 2026: bases de datos, benchmark, Comité de Inversiones, reportes para Renta Variable, Renta Fija y Alternativos, automatizaciones</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-habitat-lima-56099.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td class="nowrap num"><b>24-jul-2025</b></td>
+              <td><div class="t">Practicante de Inversiones</div><div class="s">ID 50956 · preprofesional · híbrido</div><span class="pill fo">Front office</span></td>
+              <td><ul><li>Desde 7.º ciclo de Economía, Administración, Finanzas o afines</li><li>Interés y conocimiento básico de mercado de capitales</li><li>Excel intermedio-avanzado</li><li>3 meses de experiencia similar (deseable)</li></ul></td>
+              <td><ul><li>Reportes y análisis de portafolios</li><li>Seguimiento de mercados y evaluación de activos de renta fija y renta variable</li><li>Registro de transacciones y seguimiento de límites de inversión</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-habitat-lima-50956.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td class="nowrap num"><b>24-jul-2023</b></td>
+              <td><div class="t">Practicante para Inversiones</div><div class="s">ID 23466 · preprofesional · San Isidro</div><span class="pill fo">Front office</span></td>
+              <td><ul><li>6.º a 9.º ciclo de Economía, Finanzas o afines</li><li>Conocimiento del mercado financiero</li><li>Inglés y Excel intermedio-avanzado</li></ul></td>
+              <td><ul><li>Reportes del área y registro de operaciones</li><li>Bases de datos de portafolios</li><li>Benchmarking de los fondos</li><li>Apoyo en análisis de emisores</li><li>Seguimiento y evaluación de fondos alternativos en levantamiento de capital</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-habitat-lima-23466.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td class="nowrap num"><b>22-sep-2021</b></td>
+              <td><div class="t">Prácticas en Inversiones (back office)</div><div class="s">ID 7282 · figura como Habitat, pero la postulación apuntaba a Prima AFP</div><span class="pill">Back office</span></td>
+              <td><ul><li>Desde 7.º ciclo de Economía, Administración o afines</li><li>Inglés intermedio, Excel avanzado</li></ul></td>
+              <td><ul><li>Descargar los vectores de la SBS</li><li>Calcular el encaje y enviarlo a la SBS</li><li>Reconfirmar operaciones de inversión</li><li>Valorización de portafolios e interfaz contable</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicas-economia-administracion-carreras-afines-afp-prima-lima-7282.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Benchmark -->
+    <div class="block">
+      <div class="block-head">
+        <div class="eyebrow">Referencia · otras AFP</div>
+        <h3>Qué piden Integra, Prima y Profuturo</h3>
+      </div>
+      <div class="tbl-wrap">
+        <table class="wide">
+          <thead><tr><th>AFP</th><th>Convocatoria</th><th>Requisitos</th><th>Funciones</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="t">AFP Integra</div><div class="s">Grupo SURA</div></td>
+              <td><div class="t">Practicante de Inversiones</div><div class="s">ID 49323 · cerró el 12-jun-2025</div></td>
+              <td><ul><li>Desde 7.º ciclo de Economía, Finanzas, Ing. Económica o Administración</li><li>MS Office intermedio (deseable)</li></ul></td>
+              <td><ul><li>Procesar información para casos de inversión, sobre todo en activos líquidos del exterior</li><li>Apoyo en benchmarking</li><li>Monitores de las estrategias líquidas del portafolio</li><li>Indicadores de mercado: fundamentales, valorización, técnicos y posicionamiento</li><li>Coordinar ideas de inversión y noticias con los analistas y estrategas top-down</li></ul></td>
+              <td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-integra-lima-49323.html" target="_blank" rel="noopener">Ver</a></td>
+            </tr>
+            <tr>
+              <td><div class="t">Prima AFP</div><div class="s">Credicorp</div></td>
+              <td colspan="4">La única referencia pública es la de back office de 2021 (ID 7282) de la tabla anterior: vectores SBS, encaje, reconfirmación de operaciones.</td>
+            </tr>
+            <tr>
+              <td><div class="t">Profuturo AFP</div><div class="s">Scotiabank</div></td>
+              <td colspan="4">No se encontraron convocatorias públicas verificables de prácticas en inversiones.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted" style="max-width:90ch">Lectura: Integra pone más peso en ideas de inversión y mercados internacionales (equipo top-down). Habitat pone más peso en datos, benchmark y soporte a las tres jefaturas. Que el alumno lleve una opinión de mercado y también sepa hablar de cómo organizaría datos.</p>
+    </div>
+
+    <!-- Estructura -->
+    <div class="block">
+      <div class="block-head">
+        <div class="eyebrow">Lo que dicen las convocatorias sobre Habitat</div>
+        <h3>Cómo se organiza el área de inversiones</h3>
+        <p class="muted small">Estructura inferida de las convocatorias 65415, 68807 y 67513. Conviene confirmarla en la entrevista.</p>
+      </div>
+      <div class="grid2">
+        <div class="org" aria-label="Organigrama inferido">
+          <div class="org-node top"><b>Gerencia de Inversiones</b><span>Comité de Inversiones</span></div>
+          <div class="org-lbl">Front office</div>
+          <div class="org-row">
+            <div class="org-node focus"><b>Jefatura de Renta Variable</b><span>Acciones locales e internacionales, fondos y ETFs. Aquí apunta el alumno.</span></div>
+            <div class="org-node"><b>Jefatura de Renta Fija</b><span>Bonos soberanos y corporativos, depósitos</span></div>
+            <div class="org-node"><b>Jefatura de Alternativos</b><span>Fondos de capital privado, deuda privada, infraestructura</span></div>
+          </div>
+          <div class="org-lbl">Soporte y control</div>
+          <div class="org-row">
+            <div class="org-node support"><b>Practicante de Inversiones</b><span>Datos, benchmark, reportes para las tres jefaturas</span></div>
+            <div class="org-node support"><b>Control de Inversiones</b><span>Vectores SBS, valorización, derivados, custodio</span></div>
+            <div class="org-node support"><b>Riesgos de Inversión</b><span>VaR, tracking error, límites, estrés, ETFs</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Datos de Habitat para citar</h4>
+          <div class="fact"><span class="fv">+39,98%</span><span class="fl">Rentabilidad nominal del Fondo 3 en 12 meses a agosto de 2026 (34,03% real), la más alta del sistema. El promedio fue 35,62%.</span></div>
+          <div class="fact"><span class="fv">3 de 4</span><span class="fl">Fondos donde Habitat lideró en ese período: Fondo 0 (4,79%), Fondo 1 (12,06%) y Fondo 3. En el Fondo 2 lideró Prima (21,58% vs. 21,33%).</span></div>
+          <div class="fact"><span class="fv">1,47%</span><span class="fl">Comisión sobre la remuneración, la más baja del sistema (mayo 2026). Sobre saldo cobra 1,25%; ahí Profuturo (0,68%) e Integra (0,78%) cobran menos.</span></div>
+          <div class="fact"><span class="fv">Desde 2013</span><span class="fl">Entró al Perú al ganar la primera licitación de nuevos afiliados. Su matriz es AFP Habitat de Chile, controlada por la Cámara Chilena de la Construcción y Prudential Financial.</span></div>
+          <div class="links"><a href="https://www.rankia.pe/blog/sistema-privado-pensiones/7487578-rentabilidad-afp-agosto-2026-habitat-fondo-3" target="_blank" rel="noopener">Rentabilidad a ago-2026 (Rankia, datos SBS)</a><a href="https://tramitesperu.com/comparadores/afp-comisiones/" target="_blank" rel="noopener">Comisiones AFP</a><a href="https://www.afphabitat.com.pe/nosotros/" target="_blank" rel="noopener">Habitat · Nosotros</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== PESTAÑA 2 =========================== -->
+<section class="panel" id="panel-funciones" role="tabpanel" aria-labelledby="tab-funciones" hidden>
+  <div class="wrap">
+    <div class="panel-head">
+      <div class="eyebrow">Pestaña 2</div>
+      <h2>Funciones y requisitos consolidados</h2>
+      <p class="lead">Consolidado de 9 convocatorias: 7 de Habitat (incluida la vigente de LinkedIn), 1 de Integra y 1 de back office de 2021. La barra muestra en cuántas de las 9 aparece cada punto; la importancia está pensada para un puesto orientado a renta variable.</p>
+    </div>
+
+    <div class="block" style="margin-top:22px">
+      <div class="block-head"><div class="eyebrow">Funciones</div><h3>Qué hará el practicante y qué preparar para cada cosa</h3></div>
+      <div class="tbl-wrap">
+        <table class="wide">
+          <thead><tr><th>Función</th><th>Frecuencia</th><th>Importancia</th><th>Qué estudiar o preparar</th></tr></thead>
+          <tbody>
+            <tr><td><div class="t">Reportes y presentaciones</div><div class="s">Incluye el Comité de Inversiones</div></td><td><div class="freq"><span class="bar"><i style="width:89%"></i></span>8/9</div></td><td><span class="imp h">Alta</span></td><td>Saber resumir un mercado en 5 puntos con cifras y fecha. Gráficos limpios en Excel y PowerPoint. Estructura de un reporte semanal: qué pasó, por qué, qué significa para el portafolio.</td></tr>
+            <tr><td><div class="t">Benchmarking de fondos y portafolios</div></td><td><div class="freq"><span class="bar"><i style="width:56%"></i></span>5/9</div></td><td><span class="imp h">Muy alta</span></td><td>Qué es un benchmark compuesto, retorno activo, tracking error, information ratio y atribución de desempeño (asignación vs. selección). Comparar fondos de las 4 AFP.</td></tr>
+            <tr><td><div class="t">Bases de datos y automatización</div><div class="s">SQL, Power BI, Python, VBA</div></td><td><div class="freq"><span class="bar"><i style="width:56%"></i></span>5/9</div></td><td><span class="imp h">Alta</span></td><td>Tener 1 o 2 proyectos para contar: qué datos, qué herramienta, qué se automatizó y cuánto tiempo se ahorró. Si no los tiene, preparar cómo automatizaría la descarga diaria de precios.</td></tr>
+            <tr><td><div class="t">Seguimiento de mercados y evaluación de activos</div><div class="s">Renta fija y renta variable</div></td><td><div class="freq"><span class="bar"><i style="width:44%"></i></span>4/9</div></td><td><span class="imp h">Muy alta</span></td><td>Pizarra diaria (índices, tasas, cobre, tipo de cambio), drivers de cada mercado y una opinión propia. Ver la pestaña 3, secciones 1, 2 y 4.</td></tr>
+            <tr><td><div class="t">Registro y validación de operaciones</div><div class="s">Vectores de precios SBS, custodio</div></td><td><div class="freq"><span class="bar"><i style="width:44%"></i></span>4/9</div></td><td><span class="imp m">Media</span></td><td>El ciclo de una operación (front, middle y back office), qué es el vector de precios, qué hace el custodio y qué es el encaje.</td></tr>
+            <tr><td><div class="t">Fondos mutuos, ETFs y alternativos</div></td><td><div class="freq"><span class="bar"><i style="width:33%"></i></span>3/9</div></td><td><span class="imp h">Alta</span></td><td>Cómo evaluar un ETF o un gestor externo (costo, tracking, liquidez, proceso). Alternativos: curva J, llamadas de capital, TIR y múltiplo sobre capital.</td></tr>
+            <tr><td><div class="t">Modelos de valorización de renta fija y renta variable</div></td><td><div class="freq"><span class="bar"><i style="width:22%"></i></span>2/9</div></td><td><span class="imp h">Muy alta</span></td><td>DCF, múltiplos (P/E, EV/EBITDA, P/BV), CAPM con riesgo país, precio y duración de un bono. Es lo que más diferencia en una entrevista de renta variable.</td></tr>
+            <tr><td><div class="t">Límites de inversión y riesgos</div><div class="s">VaR, tracking error, límites</div></td><td><div class="freq"><span class="bar"><i style="width:22%"></i></span>2/9</div></td><td><span class="imp m">Media</span></td><td>Límites por multifondo (Fondo 3 hasta 80% en renta variable), límite en el exterior de 51% y la idea de VaR.</td></tr>
+            <tr><td><div class="t">Análisis de emisores</div></td><td><div class="freq"><span class="bar"><i style="width:22%"></i></span>2/9</div></td><td><span class="imp m">Media</span></td><td>Estados financieros, ratios de rentabilidad, apalancamiento y liquidez, análisis DuPont.</td></tr>
+            <tr><td><div class="t">Ideas de inversión y noticias con estrategas</div></td><td><div class="freq"><span class="bar"><i style="width:11%"></i></span>1/9</div></td><td><span class="imp h">Alta</span></td><td>Poco frecuente en el texto, pero es lo que distingue al candidato. Preparar la tesis de 2 minutos de la pestaña 3.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head"><div class="eyebrow">Requisitos</div><h3>Qué piden y cómo lo cubre el alumno</h3></div>
+      <div class="tbl-wrap">
+        <table class="mid">
+          <thead><tr><th>Requisito</th><th>Frecuencia</th><th>Situación del alumno y qué hacer</th></tr></thead>
+          <tbody>
+            <tr><td><div class="t">Estudiante de últimos ciclos</div><div class="s">Cuando se especifica: 6.º–9.º; dos piden 8.º–9.º; Riesgos pide egresado</div></td><td><div class="freq"><span class="bar"><i style="width:100%"></i></span>9/9</div></td><td>Cumple (7.º–8.º ciclo). Si le preguntan, aclarar su disponibilidad de horario.</td></tr>
+            <tr><td><div class="t">Carrera afín</div><div class="s">Economía, Finanzas, Administración, Ing. Empresarial, Económica, Industrial, Estadística</div></td><td><div class="freq"><span class="bar"><i style="width:100%"></i></span>9/9</div></td><td>Cumple si su carrera está en la lista.</td></tr>
+            <tr><td><div class="t">Excel intermedio-avanzado</div></td><td><div class="freq"><span class="bar"><i style="width:67%"></i></span>6/9</div></td><td>Practicar en vivo: tablas dinámicas, BUSCARX o ÍNDICE+COINCIDIR, SUMAR.SI.CONJUNTO, retornos, volatilidad y gráficos. Pueden darle un caso corto.</td></tr>
+            <tr><td><div class="t">Conocimiento de mercado financiero o de capitales</div></td><td><div class="freq"><span class="bar"><i style="width:44%"></i></span>4/9</div></td><td>Cubierto con la pestaña 3. Es donde más puede destacar.</td></tr>
+            <tr><td><div class="t">Inglés intermedio a avanzado</div></td><td><div class="freq"><span class="bar"><i style="width:44%"></i></span>4/9</div></td><td>Preparar 2 respuestas en inglés: presentación personal y una opinión de mercado. Los reportes de gestores se leen en inglés.</td></tr>
+            <tr><td><div class="t">Análisis de datos (SQL, Power BI)</div></td><td><div class="freq"><span class="bar"><i style="width:33%"></i></span>3/9</div></td><td>Mencionar cualquier proyecto real, aunque sea académico.</td></tr>
+            <tr><td><div class="t">Python o R</div></td><td><div class="freq"><span class="bar"><i style="width:33%"></i></span>3/9</div></td><td>Suma puntos. Si no lo maneja, decir qué le gustaría automatizar y que está aprendiendo.</td></tr>
+            <tr><td><div class="t">VBA</div></td><td><div class="freq"><span class="bar"><i style="width:22%"></i></span>2/9</div></td><td>Opcional.</td></tr>
+            <tr><td><div class="t">Experiencia previa (3–6 meses)</div></td><td><div class="freq"><span class="bar"><i style="width:22%"></i></span>2/9</div></td><td>Deseable. Si no tiene, usar trabajos de curso, concursos o círculos de inversión.</td></tr>
+            <tr><td><div class="t">Bloomberg</div></td><td><div class="freq"><span class="bar"><i style="width:11%"></i></span>1/9</div></td><td>Deseable. Conocer funciones básicas: WEI (índices mundiales), DES, FA (financieros), GP (gráfico), RV (valor relativo), ECO (calendario).</td></tr>
+            <tr><td><div class="t">CFA</div></td><td><div class="freq"><span class="bar"><i style="width:0%"></i></span>0/9</div></td><td>No lo piden. Los readings del CFA sirven como material de estudio.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid2">
+        <div class="card"><h4>Dónde está fuerte</h4><ul class="bul small"><li>Ciclo y carrera dentro del perfil.</li><li>Renta fija: curva, duración, precio de bonos. Es el puente para explicar el costo de capital de una acción.</li><li>Base de matemática financiera para valorizar.</li></ul></div>
+        <div class="card"><h4>Qué reforzar antes de la entrevista</h4><ul class="bul small"><li>Valorización de acciones y múltiplos.</li><li>Métricas de portafolio y benchmark.</li><li>Mercados globales, BVL y Brasil con datos de octubre.</li><li>Derivados a nivel conceptual, con dos cálculos.</li><li>El sistema privado de pensiones: multifondos, límites, Ley 32123, retiros.</li><li>Excel aplicado en vivo.</li></ul></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <div class="eyebrow">Ruta de preparación</div>
+        <h3>Catorce pasos, en orden</h3>
+        <p class="muted small">Marca cada paso al terminarlo. El avance se guarda en este navegador.</p>
+      </div>
+      <div class="progress"><span class="track"><i id="prog-bar"></i></span><span class="small num" id="prog-txt">0 de 14 pasos</span></div>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><div class="step-main"><div class="step-top"><h4>Entender el puesto</h4><label class="chk"><input type="checkbox" id="s1">Hecho</label></div><p>Leer las convocatorias de junio de 2026 (ID 65415) y julio de 2025 (ID 50956) y subrayar funciones y herramientas.</p><p class="out">Resultado: explicar en 30 segundos qué hace el practicante y para qué jefaturas trabaja.</p><button class="go" data-goto="convocatorias">Ir a convocatorias →</button></div></li>
+        <li class="step"><span class="step-n">2</span><div class="step-main"><div class="step-top"><h4>Presentación personal y "¿por qué Habitat?"</h4><label class="chk"><input type="checkbox" id="s2">Hecho</label></div><p>Armar una presentación de 60 segundos (presente, pasado, futuro) y una razón para Habitat con 3 datos: Fondo 3 con 39,98% en 12 meses, comisión de 1,47% y respaldo de su grupo.</p><p class="out">Resultado: respuestas a las preguntas 35 y 36 del banco, dichas en voz alta.</p><button class="go" data-goto="guia" data-target="q35">Ir a la pregunta →</button></div></li>
+        <li class="step"><span class="step-n">3</span><div class="step-main"><div class="step-top"><h4>El sistema de pensiones en 10 conceptos</h4><label class="chk"><input type="checkbox" id="s3">Hecho</label></div><p>Multifondos, valor cuota, rentabilidad nominal y real, comisiones, licitación, encaje, vector de precios SBS, límite en el exterior de 51%, Ley 32123 y retiros.</p><p class="out">Resultado: responder las preguntas 28 a 34 sin mirar.</p><button class="go" data-goto="guia" data-target="sec-preguntas">Ir al banco de preguntas →</button></div></li>
+        <li class="step"><span class="step-n">4</span><div class="step-main"><div class="step-top"><h4>Macro de Perú en una hoja</h4><label class="chk"><input type="checkbox" id="s4">Hecho</label></div><p>Tasa del BCRP (4,25%), inflación (4,5%), tipo de cambio (~3,44), calificaciones, nuevo gobierno, cobre y El Niño.</p><p class="out">Resultado: un párrafo propio sobre cómo está Perú y qué significa para la BVL.</p><button class="go" data-goto="guia" data-target="sec-actualidad">Ir a actualidad →</button></div></li>
+        <li class="step"><span class="step-n">5</span><div class="step-main"><div class="step-top"><h4>Tasas globales y el puente entre renta fija y renta variable</h4><label class="chk"><input type="checkbox" id="s5">Hecho</label></div><p>Fed, BCE, bono de EE.UU. a 10 años, duración y la prima por riesgo implícita, que hoy está cerca de cero.</p><p class="out">Resultado: explicar por qué un bono a 5,2% compite con el S&amp;P 500.</p><button class="go" data-goto="guia" data-target="sec-rf">Ir a renta fija →</button></div></li>
+        <li class="step"><span class="step-n">6</span><div class="step-main"><div class="step-top"><h4>Valorización de acciones</h4><label class="chk"><input type="checkbox" id="s6">Hecho</label></div><p>Repasar DCF (FCFF y FCFE), múltiplos, CAPM con riesgo país, modelo de dividendos y P/BV contra ROE. Armar en Excel un DCF de 5 años de una empresa de la BVL.</p><p class="out">Resultado: un Excel propio para mencionar en la entrevista.</p><button class="go" data-goto="guia" data-target="sub-conceptos">Ir a conceptos técnicos →</button></div></li>
+        <li class="step"><span class="step-n">7</span><div class="step-main"><div class="step-top"><h4>Portafolio y benchmarking</h4><label class="chk"><input type="checkbox" id="s7">Hecho</label></div><p>Sharpe, tracking error, information ratio, alfa, atribución de desempeño y cómo evaluar un ETF o un gestor externo.</p><p class="out">Resultado: responder las preguntas 8 a 11.</p><button class="go" data-goto="guia" data-target="q8">Ir a la pregunta 8 →</button></div></li>
+        <li class="step"><span class="step-n">8</span><div class="step-main"><div class="step-top"><h4>Mapa global de renta variable</h4><label class="chk"><input type="checkbox" id="s8">Hecho</label></div><p>EE.UU., Corea del Sur, Indonesia, China, Europa y Japón: una frase por mercado con un dato y su driver.</p><p class="out">Resultado: hablar 2 minutos de "qué está pasando en las bolsas".</p><button class="go" data-goto="guia" data-target="sub-global">Ir al mapa global →</button></div></li>
+        <li class="step"><span class="step-n">9</span><div class="step-main"><div class="step-top"><h4>Opinión de los grandes gestores</h4><label class="chk"><input type="checkbox" id="s9">Hecho</label></div><p>Leer el resumen de J.P. Morgan, Goldman Sachs, BlackRock, UBS y Amundi y anotar en qué coinciden.</p><p class="out">Resultado: 3 líneas con el consenso y un punto de desacuerdo.</p><button class="go" data-goto="guia" data-target="sub-gestores">Ir a gestores →</button></div></li>
+        <li class="step"><span class="step-n">10</span><div class="step-main"><div class="step-top"><h4>BVL y Brasil</h4><label class="chk"><input type="checkbox" id="s10">Hecho</label></div><p>Seis empresas peruanas con su driver, una opinión sobre la BVL y el escenario de Brasil antes del balotaje del 25 de octubre.</p><p class="out">Resultado: una opinión propia y sus riesgos.</p><button class="go" data-goto="guia" data-target="sub-peru">Ir a Perú y Brasil →</button></div></li>
+        <li class="step"><span class="step-n">11</span><div class="step-main"><div class="step-top"><h4>Derivados básicos</h4><label class="chk"><input type="checkbox" id="s11">Hecho</label></div><p>Forward de tipo de cambio (calcular uno), payoffs de opciones, paridad put-call, griegas y cobertura con futuros.</p><p class="out">Resultado: hacer los dos ejemplos numéricos sin mirar.</p><button class="go" data-goto="guia" data-target="sec-der">Ir a derivados →</button></div></li>
+        <li class="step"><span class="step-n">12</span><div class="step-main"><div class="step-top"><h4>Excel en vivo</h4><label class="chk"><input type="checkbox" id="s12">Hecho</label></div><p>Con precios diarios de 2 o 3 acciones: retornos, volatilidad anualizada, correlación, retorno acumulado contra un índice y una tabla dinámica. Si tiene algo en Python o SQL, tenerlo listo para describir.</p><p class="out">Resultado: hacerlo en menos de 15 minutos.</p></div></li>
+        <li class="step"><span class="step-n">13</span><div class="step-main"><div class="step-top"><h4>Noticias del día de la entrevista</h4><label class="chk"><input type="checkbox" id="s13">Hecho</label></div><p>Revisar Gestión, Bloomberg Línea, el cierre de Wall Street y de la BVL, y la agenda de la semana (Fed y BCE el 28 y 29 de octubre).</p><p class="out">Resultado: 3 titulares con una opinión breve sobre cada uno.</p><button class="go" data-goto="guia" data-target="sec-links">Ir a fuentes de noticias →</button></div></li>
+        <li class="step"><span class="step-n">14</span><div class="step-main"><div class="step-top"><h4>Ensayo final</h4><label class="chk"><input type="checkbox" id="s14">Hecho</label></div><p>Responder en voz alta 15 preguntas del banco (2 en inglés), una tesis de 2 minutos y las preguntas para el entrevistador.</p><p class="out">Resultado: respuestas de 60 a 90 segundos, con un dato cada una.</p><button class="go" data-goto="guia" data-target="sub-tesis">Ir a tesis y preguntas →</button></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== PESTAÑA 3 =========================== -->
+<section class="panel" id="panel-guia" role="tabpanel" aria-labelledby="tab-guia" hidden>
+  <div class="wrap">
+    <div class="panel-head">
+      <div class="eyebrow">Pestaña 3</div>
+      <h2>Guía de estudio, preguntas y fuentes</h2>
+      <p class="lead">Seis bloques: renta fija, renta variable, derivados, actualidad, banco de 40 preguntas con respuestas y la biblioteca de links verificados.</p>
+    </div>
+    <div class="subnav" aria-label="Ir a">
+      <button data-goto="guia" data-target="sec-rf">1 · Renta fija</button>
+      <button data-goto="guia" data-target="sec-rv">2 · Renta variable</button>
+      <button data-goto="guia" data-target="sec-der">3 · Derivados</button>
+      <button data-goto="guia" data-target="sec-actualidad">4 · Actualidad</button>
+      <button data-goto="guia" data-target="sec-preguntas">5 · Preguntas y respuestas</button>
+      <button data-goto="guia" data-target="sec-links">6 · Biblioteca de links</button>
+    </div>
+
+    <!-- 1 RENTA FIJA -->
+    <div class="sec anchor" id="sec-rf">
+      <div class="sec-head"><div class="eyebrow">Ámbito 1</div><h2><span class="idx">1</span>Renta fija para un analista de renta variable</h2><p class="muted">Lo que debe saber: dónde están las tasas, por qué importan para valorizar acciones y las fórmulas básicas.</p></div>
+
+      <div class="sub">
+        <h3>Bancos centrales</h3>
+        <div class="tbl-wrap">
+          <table class="wide">
+            <thead><tr><th>Banco central</th><th>Tasa</th><th>Último movimiento</th><th>Próxima reunión</th><th>Lectura</th></tr></thead>
+            <tbody>
+              <tr><td><div class="t">Fed (EE.UU.)</div><div class="s">Presidente: Kevin Warsh</div></td><td class="num nowrap"><b>3,75–4,00%</b></td><td>+25 pb el 16-sep-2026, la primera alza desde 2023, con proyección de otra alza en 2026</td><td class="nowrap">27–28 oct</td><td>La inflación de septiembre (3,7% general, 2,6% subyacente, empujada por energía) reabrió la discusión. El mercado se divide entre una alza en octubre o en diciembre.</td></tr>
+              <tr><td><div class="t">BCE (eurozona)</div></td><td class="num nowrap"><b>2,50%</b><div class="s">depósito</div></td><td>+25 pb el 16-sep, la segunda alza del año (la primera fue en junio)</td><td class="nowrap">29 oct</td><td>Inflación de 3,3% en agosto por energía, con el Brent cerca de US$100. El BCE proyecta 3,0% para 2026 y crecimiento de solo 0,9%.</td></tr>
+              <tr><td><div class="t">BCRP (Perú)</div></td><td class="num nowrap"><b>4,25%</b></td><td>Último recorte en sep-2025; mantenida todo 2026</td><td class="nowrap">12 nov</td><td>Inflación de 4,5% en septiembre por combustibles, electricidad y transporte, sobre el rango meta de 1–3%. Expectativas a 12 meses de 3,1%. Riesgos: El Niño y el petróleo. No hay recortes cercanos.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="links"><a href="https://www.elfinanciero.com.mx/economia/2026/09/16/fed-sube-su-tasa-de-interes-en-un-cuarto-de-punto-se-ubica-en-rango-de-375-a-4/" target="_blank" rel="noopener">Fed sube a 3,75–4% (El Financiero)</a><a href="https://www.elfinanciero.com.mx/economia/2026/10/15/mayor-inflacion-en-eu-tira-a-las-bolsas-y-presiona-al-peso/" target="_blank" rel="noopener">IPC de EE.UU. y caída de bolsas (El Financiero, 15-oct)</a><a href="https://www.finect.com/usuario/davidcarmona/articulos/reunion-bce-septiembre-2026-el-mercado-da-por-hecha-una-subida-de-tipos-al-250" target="_blank" rel="noopener">BCE sube a 2,50% (Finect)</a><a href="https://www.infobae.com/peru/2026/10/08/tasa-del-bcrp-seguira-en-425-inflacion-aun-supera-el-rango-meta/" target="_blank" rel="noopener">BCRP mantiene 4,25% (Infobae, 8-oct)</a></div>
+      </div>
+
+      <div class="sub">
+        <h3>Curva, crédito e inflación</h3>
+        <div class="grid2">
+          <div class="card">
+            <h4>Bono del Tesoro a 10 años</h4>
+            <p class="small">Cotiza alrededor de 5,1–5,2% tras tocar cerca de 5,35% a inicios de octubre, máximos del año. Goldman Sachs explica que el tramo largo sigue alto por déficits fiscales y la deuda que se emite para financiar inversión en IA. J.P. Morgan no quiere duración larga en EE.UU. y prefiere duración en Europa; UBS espera que el rendimiento baje a 4,0% a mediados de 2027.</p>
+          </div>
+          <div class="card">
+            <h4>Perú: crédito soberano</h4>
+            <p class="small">Moody's ratificó Baa1 con perspectiva estable en septiembre de 2026: valora la mayor estabilidad política pero advierte riesgos fiscales. Fitch: BBB estable, con deuda pública menor a 35% del PBI y déficit cercano a 2%. S&amp;P: BBB-. El riesgo país (EMBIG) se sigue en la Nota Semanal del BCRP.</p>
+          </div>
+          <div class="card">
+            <h4>Inflación</h4>
+            <p class="small num">EE.UU. 3,7% (sep) · Eurozona 3,3% (ago) · Perú 4,5% (sep). El hilo común es la energía: el conflicto con Irán mantiene el petróleo cerca de US$100. Por eso los bancos centrales volvieron a subir o dejaron de recortar.</p>
+          </div>
+          <div class="card">
+            <h4>Spreads de crédito</h4>
+            <p class="small">Spread = rendimiento del bono corporativo − rendimiento del soberano de igual duración. Grado de inversión (IG) vs. alto rendimiento (HY). El EMBI mide el spread de los soberanos emergentes sobre los Treasuries. J.P. Morgan y UBS ven atractivo el high yield por carry; Schroders estaba negativo en crédito a mediados de año.</p>
+          </div>
+        </div>
+        <div class="links"><a href="https://rpp.pe/economia/economia/moodys-mantiene-calificacion-de-peru-en-baa1-con-perspectiva-estable-destaca-mayor-estabilidad-politica-pero-advierte-riesgos-fiscales-noticia-1708848" target="_blank" rel="noopener">Moody's ratifica Baa1 (RPP)</a><a href="https://elperuano.pe/noticia/301714-calificacion-crediticia-del-peru-puede-fortalecerse" target="_blank" rel="noopener">Calificación del Perú (El Peruano)</a><a href="https://am.gs.com/en-sg/advisors/insights/article/fixed-income-outlook" target="_blank" rel="noopener">GSAM Fixed Income Outlook 4T-2026</a><a href="https://am.jpmorgan.com/hk/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/fixed-income/" target="_blank" rel="noopener">J.P. Morgan Fixed Income Views 4T-2026</a></div>
+      </div>
+
+      <div class="sub">
+        <h3>Fórmulas clave</h3>
+        <div class="fgrid">
+          <div class="f"><span class="fn">Precio de un bono</span><span class="fx">P = Σ C/(1+y)<sup>t</sup> + VN/(1+y)<sup>n</sup></span><span class="fd">Precio y tasa se mueven en sentido contrario.</span></div>
+          <div class="f"><span class="fn">Duración modificada y convexidad</span><span class="fx">ΔP/P ≈ −D<sub>mod</sub>·Δy + ½·Conv·(Δy)²</span><span class="fd">D<sub>mod</sub> = D<sub>Macaulay</sub>/(1+y). La convexidad mejora la aproximación en movimientos grandes.</span></div>
+          <div class="f"><span class="fn">DV01</span><span class="fx">DV01 = D<sub>mod</sub> × P × 0,0001</span><span class="fd">Cambio de precio por 1 punto básico.</span></div>
+          <div class="f"><span class="fn">Prima por riesgo implícita (aproximación)</span><span class="fx">ERP ≈ E/P − y<sub>10 años</sub></span><span class="fd">E/P es la inversa del P/E (earnings yield).</span></div>
+        </div>
+        <div class="example"><b class="h">Ejemplo</b><p class="num">Bono con D<sub>mod</sub> = 7 y convexidad = 60. Si la tasa sube 50 pb: ΔP/P ≈ −7 × 0,005 + ½ × 60 × 0,005² = −3,50% + 0,08% = <b>−3,43%</b>.</p></div>
+      </div>
+
+      <div class="sub">
+        <h3>El puente con renta variable</h3>
+        <div class="info">
+          <h4>Dato para la entrevista</h4>
+          <p>Con el S&amp;P 500 a ~20,1 veces las utilidades esperadas (agosto), el earnings yield es ~5,0%. El bono a 10 años rinde ~5,1–5,2%. La prima implícita por tener acciones en vez de bonos es casi cero. El mercado se sostiene porque las utilidades crecen muy rápido (el BPA del segundo trimestre subió ~33%), pero queda muy sensible a cualquier alza de tasas.</p>
+          <p class="small">Matiz: el E/P se parece a un rendimiento real y el bono es nominal, así que la comparación exagera el problema. Decirlo muestra criterio.</p>
+        </div>
+        <ul class="bul small" style="max-width:80ch">
+          <li>Si sube la tasa libre de riesgo, sube el costo del accionista (Ke) y baja el valor presente de los flujos.</li>
+          <li>Las acciones growth se comportan como bonos de larga duración: sus flujos están lejos, así que caen más cuando suben las tasas.</li>
+          <li>Value, bancos y empresas con dividendos sufren menos. Por eso Goldman Sachs cree que Europa, un mercado de "corta duración", puede ganar si la inflación reacelera.</li>
+        </ul>
+        <div class="links"><a href="https://www.bloomberglinea.com/mercados/el-sp-500-suma-26-maximos-historicos-en-2026-las-10-senales-que-explican-por-que/" target="_blank" rel="noopener">S&amp;P 500: 26 máximos y 10 señales (Bloomberg Línea)</a><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histimpl.html" target="_blank" rel="noopener">Damodaran: prima implícita histórica</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/yield-based-bond-duration-measures-and-properties" target="_blank" rel="noopener">CFA: duración</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/yield-based-bond-convexity-and-portfolio-properties" target="_blank" rel="noopener">CFA: convexidad</a></div>
+      </div>
+    </div>
+
+    <!-- 2 RENTA VARIABLE -->
+    <div class="sec anchor" id="sec-rv">
+      <div class="sec-head"><div class="eyebrow">Ámbito 2</div><h2><span class="idx">2</span>Renta variable</h2><p class="muted">Internacional, gestores, Perú, Brasil y conceptos técnicos.</p></div>
+
+      <div class="sub anchor" id="sub-global">
+        <h3>Mapa global 2026</h3>
+        <div class="tbl-wrap">
+          <table class="wide">
+            <thead><tr><th>Mercado</th><th>Cómo va</th><th>Qué lo movió</th><th>Lectura para la entrevista</th></tr></thead>
+            <tbody>
+              <tr><td><div class="t">EE.UU.</div><div class="s">S&amp;P 500 · Nasdaq</div></td><td class="num">S&amp;P 7.659 (+11,9% en 2026) y Nasdaq 26.140 (+12,5%) al 16-oct. Récord del S&amp;P cerca de 7.819 el 6-oct. Semana al 16-oct: −1,9% y −4,5%.</td><td>Utilidades muy fuertes (BPA del 2T ~+33%), IA y semiconductores, recompras por más de US$1 billón, flujos récord a ETFs. Freno reciente: inflación de septiembre y tasas sobre 5%.</td><td>Valuación de ~20x (el S&amp;P equiponderado ~17x) y concentración en IA. Favorito de J.P. Morgan, BlackRock y UBS, con preferencia por diversificar.</td></tr>
+              <tr><td><div class="t">Corea del Sur</div><div class="s">KOSPI</div></td><td class="num">Máximo de 9.385 en junio; 5.668 al 16-oct (~−40% desde el pico). Aún +51% a 12 meses.</td><td>Ciclo de memoria HBM: Samsung y SK Hynix llegaron a pesar ~44% del índice. Programa "Value-up" de gobierno corporativo. La corrección vino por dudas sobre el gasto en IA, riesgo de sobreoferta de memoria, apalancamiento minorista y el IPC de EE.UU. (−7,6% el 15-oct, con freno de negociación).</td><td>El mejor ejemplo de riesgo de concentración y de lo cíclico que es la memoria.</td></tr>
+              <tr><td><div class="t">Indonesia</div><div class="s">Jakarta Composite</div></td><td class="num">Cayó hasta 11% el 16-oct, el peor día desde 1998. Cerca de −40% en 2026.</td><td>MSCI consulta reclasificarla de emergente a "standalone" por problemas de transparencia y accesibilidad. Si sale de los índices, los fondos pasivos deben vender. Rupia en 18.070 por dólar, cerca de su mínimo histórico.</td><td>Lección para Perú: la clasificación MSCI depende de liquidez, emisores elegibles y acceso para extranjeros.</td></tr>
+              <tr><td><div class="t">China</div><div class="s">CSI 300 · Hang Seng</div></td><td class="num">CSI 300 en 4.171 al 16-oct, mínimo de 13 meses, ~−12% desde enero y −7,6% a 12 meses. En 2025: CSI 300 +18%, Hang Seng +28%.</td><td>IA local (DeepSeek), competencia en chips, relación con EE.UU., estímulos. Yuan en su nivel más fuerte desde 2022.</td><td>Corrigió en 2026 tras un gran 2025. UBS la ve atractiva; es un mercado para gestión activa y selectiva.</td></tr>
+              <tr><td><div class="t">Europa</div><div class="s">Euro Stoxx 50 · DAX</div></td><td class="num">DAX ~24.900 el 1-oct, apoyado en su promedio de 200 días. Bolsas presionadas por la energía.</td><td>El BCE sube tasas (2,50%) por inflación de energía. A favor: gasto en defensa e infraestructura, plan fiscal alemán, bancos que ganan con tasas más altas.</td><td>Gestores divididos: UBS subió la eurozona a Atractivo y Amundi apuesta por el capex europeo; J.P. Morgan la deja neutral.</td></tr>
+              <tr><td><div class="t">Japón</div><div class="s">TOPIX</div></td><td>Sin dato de cierre verificado.</td><td>Reforma de gobierno corporativo y reflación.</td><td>Sobreponderado por J.P. Morgan; UBS lo califica Atractivo.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="links"><a href="https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-10162026-nid16102026/" target="_blank" rel="noopener">Cierres de Wall Street 16-oct (La Nación/AP)</a><a href="https://es.tradingeconomics.com/south-korea/stock-market" target="_blank" rel="noopener">KOSPI (Trading Economics)</a><a href="https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/kospi-cae-18-en-dos-semanas-se-frena-el-rally-de-la-ia" target="_blank" rel="noopener">Kospi cae 18% en dos semanas (XTB)</a><a href="https://thestar.com.my/business/business-news/2026/10/16/jakarta-stocks-plunge-11-as-msci-set-to-drop-indonesia-from-indexes" target="_blank" rel="noopener">Indonesia y MSCI (The Star/Reuters)</a><a href="https://tradingeconomics.com/shsz300:ind" target="_blank" rel="noopener">CSI 300 (Trading Economics)</a><a href="https://www.scmp.com/business/banking-finance/article/3339265/chinese-ai-stocks-drive-market-gains-2026-though-pace-set-cool-banks-say" target="_blank" rel="noopener">IA china en 2026 (SCMP)</a><a href="https://investinglive.com/es/acciones/bolsas-europeas-cierran-a-la-baja-dax-mantiene-un-soporte-clave-en-la-media-movil-de-200-dias-ftse-cierra-por-debajo-de-su-media-movil-de-200-dias/" target="_blank" rel="noopener">Bolsas europeas (investingLive)</a></div>
+      </div>
+
+      <div class="sub anchor" id="sub-gestores">
+        <h3>Qué dicen los grandes gestores</h3>
+        <div class="tbl-wrap">
+          <table class="wide">
+            <thead><tr><th>Gestor y reporte</th><th>Renta variable</th><th>Renta fija</th><th>Riesgos que vigilan</th></tr></thead>
+            <tbody>
+              <tr><td><div class="t"><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/" target="_blank" rel="noopener">J.P. Morgan AM</a></div><div class="s">Asset Allocation Views 4T-2026</div></td><td>Pro-riesgo. Sobrepondera EE.UU. (S&amp;P a 8.600 en 12 meses) y Japón. Europa y emergentes neutrales.</td><td>Prefiere duración en Europa sobre EE.UU. Le gusta el high yield de EE.UU. por carry.</td><td>Fed agresiva, caída fuerte de acciones, Medio Oriente, que acciones y bonos caigan juntos.</td></tr>
+              <tr><td><div class="t"><a href="https://am.gs.com/en-us/advisors/insights/article/market-know-how" target="_blank" rel="noopener">Goldman Sachs AM</a></div><div class="s">Market Know-How 4T-2026, 6-oct</div></td><td>Alta convicción en emergentes por el capex en IA. Rotar de las megacaps a small caps de EE.UU. Si la inflación reacelera, Europa y dividendos altos.</td><td>Deuda emergente como carry poco correlacionado. Gestión activa de la duración.</td><td>Inflación sobre 3% hasta 2028, energía, elecciones (medio término de EE.UU. el 3-nov), prima por plazo alta.</td></tr>
+              <tr><td><div class="t"><a href="https://www.blackrock.com/uk/professionals/solutions/blackrock-investment-institute/publications/outlook" target="_blank" rel="noopener">BlackRock BII</a></div><div class="s">Midyear Outlook, jun-2026</div></td><td>Sobrepondera EE.UU. Temas: cuellos de botella de la IA (energía, redes, memoria, chips, data centers) e infraestructura.</td><td>Prefiere bonos de corto plazo. Ve la duración como mal diversificador en 2026.</td><td>Escasez de recursos para la IA, fragmentación geopolítica.</td></tr>
+              <tr><td><div class="t"><a href="https://advisors.ubs.com/mediahandler/media/823469/UBS%20House%20View%20for%20August%202026.pdf" target="_blank" rel="noopener">UBS GWM</a></div><div class="s">House View, ago-2026</div></td><td>Acciones atractivas. S&amp;P a 8.200 a jun-2027. Eurozona, Japón y emergentes (China, Corea, India) atractivos.</td><td>Calidad de plazo corto e intermedio; high yield atractivo; Treasury a 10 años en 4,0% a jun-2027.</td><td>Decepción en IA, energía y Ormuz, bancos centrales más duros, concentración.</td></tr>
+              <tr><td><div class="t"><a href="https://research-center.amundi.com/article/2026-mid-year-outlook" target="_blank" rel="noopener">Amundi</a></div><div class="s">Mid-Year Outlook, 29-jun</div></td><td>Europa por el ciclo de inversión (defensa, energía, infraestructura de IA). Emergentes selectivos: exportadores de commodities y marcos de política creíbles. Evitar concentración.</td><td>Adaptarse a tasas más altas; la duración sola no basta como cobertura. Oro y activos reales.</td><td>Choque de energía, deuda alta, elecciones de medio término en EE.UU.</td></tr>
+              <tr><td><div class="t"><a href="https://www.morganstanley.com/insights/articles/investment-outlook-midyear-2026" target="_blank" rel="noopener">Morgan Stanley</a></div><div class="s">Midyear Outlook 2026</div></td><td>Constructivo: S&amp;P +12% en 12 meses (8.300 a mediados de 2027).</td><td>Espera un dólar más débil.</td><td>Política y valuaciones.</td></tr>
+              <tr><td><div class="t"><a href="https://www.vanguard.co.uk/professional/vanguard-economic-and-market-outlook" target="_blank" rel="noopener">Vanguard</a></div><div class="s">Midyear update, jul-2026</div></td><td>Prefiere acciones value sobre growth.</td><td>Favorece la renta fija.</td><td>Europa sufre más que EE.UU. el costo de la energía.</td></tr>
+              <tr><td><div class="t"><a href="https://www.pimco.com/us/en/insights/growth-holds-risks-widen" target="_blank" rel="noopener">PIMCO</a></div><div class="s">Growth Holds, Risks Widen, oct-2026</div></td><td>—</td><td>Portafolio global diversificado de duración de alta calidad.</td><td>Riesgos más amplios aunque el crecimiento aguanta.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info"><h4>Consenso en una frase</h4><p>Seguir invertido en acciones pero diversificar fuera de las megacaps de IA (small caps, Japón, emergentes, Europa según el gestor), con bonos de calidad de plazo corto e intermedio, y vigilar a la Fed y la energía.</p></div>
+      </div>
+
+      <div class="sub anchor" id="sub-peru">
+        <h3>Renta variable peruana</h3>
+        <p class="small" style="max-width:80ch">El índice general de la BVL superó los 60.000 puntos el 2 de octubre y sube cerca de 37% en el año. Minería es el sector de mayor peso, seguido de financiero; consumo, cemento e industrial completan el índice.</p>
+        <div class="tbl-wrap">
+          <table class="wide">
+            <thead><tr><th>Empresa</th><th>Sector</th><th>Driver principal</th><th>Qué mirar</th></tr></thead>
+            <tbody>
+              <tr><td><div class="t">Southern Copper</div><div class="s">SCCO · NYSE y BVL</div></td><td>Minería de cobre</td><td>Precio del cobre, costos bajos, cartera de proyectos</td><td>Producción guiada, costo por libra, dividendo</td></tr>
+              <tr><td><div class="t">Cerro Verde</div><div class="s">CVERDEC1 · Freeport</div></td><td>Minería de cobre</td><td>Cobre y dividendos</td><td>Ley del mineral, costos</td></tr>
+              <tr><td><div class="t">Buenaventura</div><div class="s">BVN · NYSE</div></td><td>Oro, plata, cobre</td><td>Precio del oro y la plata, nuevos proyectos (San Gabriel)</td><td>Producción, costo all-in, participaciones en otras minas</td></tr>
+              <tr><td><div class="t">Credicorp</div><div class="s">BAP · NYSE</div></td><td>Financiero (BCP, Mibanco, Pacífico, Prima AFP, Yape)</td><td>Crecimiento del crédito, margen financiero, costo de riesgo. Es el mejor termómetro del riesgo político</td><td>P/BV contra ROE, mora, monetización de Yape</td></tr>
+              <tr><td><div class="t">Intercorp Financial Services</div><div class="s">IFS</div></td><td>Financiero (Interbank, Interseguro, Inteligo, Izipay)</td><td>Crédito de consumo, tasas, pagos digitales</td><td>ROE, costo de riesgo</td></tr>
+              <tr><td><div class="t">BBVA Perú</div><div class="s">BBVAC1</div></td><td>Banca</td><td>Crédito y tasas</td><td>Margen y eficiencia</td></tr>
+              <tr><td><div class="t">Ferreycorp</div><div class="s">FERREYC1</div></td><td>Industrial (distribuidor Caterpillar)</td><td>Inversión minera y construcción</td><td>Ventas de maquinaria, dividendo</td></tr>
+              <tr><td><div class="t">UNACEM</div><div class="s">UNACEMC1</div></td><td>Cemento</td><td>Autoconstrucción y obra pública</td><td>Despachos de cemento, deuda</td></tr>
+              <tr><td><div class="t">Alicorp · InRetail</div><div class="s">ALICORC1 · INRETC1</div></td><td>Consumo masivo · retail y farmacias</td><td>Consumo privado, costo de materias primas</td><td>Márgenes y volúmenes</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid2">
+          <div class="card">
+            <h4>Drivers de la BVL hoy</h4>
+            <ul class="bul small">
+              <li><b>Cobre</b> cerca de máximos (~US$14.500/t el 13-oct) por huelgas en Chile y demanda de electrificación e IA. Pesa en utilidades, recaudación y tipo de cambio.</li>
+              <li><b>Política:</b> Keiko Fujimori asumió el 28-jul con un Congreso bicameral. El mercado reaccionó con menos volatilidad que en 2021.</li>
+              <li><b>Tasas:</b> el BCRP no puede recortar con inflación de 4,5%.</li>
+              <li><b>Flujos AFP:</b> el límite en el exterior subió a 51%; ningún retiro se aprobó en 2026, pero el tema puede volver con el nuevo Congreso.</li>
+              <li><b>MSCI:</b> Perú sigue como emergente, pero depende de pocas acciones elegibles. Indonesia muestra el costo de una reclasificación.</li>
+              <li><b>Calificaciones</b> estables (Moody's Baa1).</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Opinión sugerida (que la adapte)</h4>
+            <p class="small"><b>Constructivo pero selectivo.</b> Los fundamentos acompañan: cobre alto, menos ruido político, calificaciones estables. Pero tras ~37% de alza mucho está en precio. Preferencia por mineras de cobre de bajo costo y bancos con ROE alto. Riesgos: un noveno retiro de AFP, caída de metales si China se desacelera, una Fed más dura y la baja liquidez del mercado local.</p>
+          </div>
+        </div>
+        <div class="links"><a href="https://www.infobae.com/peru/2026/10/02/bvl-supera-los-60000-puntos-bolsa-limena-abrio-al-alza-junto-a-wall-street/" target="_blank" rel="noopener">BVL supera 60.000 (Infobae)</a><a href="https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/cobre-cerca-de-su-maximo-historico-huelgas-en-chile-demanda-de-la-inteligencia-artificial-y-una-fed-que-sube-tasas" target="_blank" rel="noopener">Cobre cerca de máximos (XTB, 13-oct)</a><a href="https://www.infobae.com/peru/2026/06/24/sol-peruano-se-deprecia-y-bolsa-de-valores-cae-hoy-con-fujimori-como-virtual-presidenta-electa-por-que/" target="_blank" rel="noopener">Reacción a la elección (Infobae)</a><a href="https://gestion.pe/economia/mercados/peru-confirma-posicion-mercado-emergente-indices-msci-233849-noticia/" target="_blank" rel="noopener">Perú en MSCI (Gestión, contexto)</a></div>
+
+        <h3 style="margin-top:14px">Brasil</h3>
+        <div class="grid2">
+          <div class="card">
+            <h4>Qué pasó</h4>
+            <p class="small">En la primera vuelta (4-oct) Flávio Bolsonaro sacó 47,03% y Lula 45,16%. El Ibovespa subió ~8% a récord el 5-oct (~207.000) y el real se fortaleció de 5,22 a ~4,98 por dólar. El mercado apuesta por un giro fiscal: control de deuda y privatizaciones. BTG Pactual estima hasta +45% si gana Bolsonaro. Balotaje: <b>25 de octubre</b>.</p>
+          </div>
+          <div class="card">
+            <h4>Drivers principales</h4>
+            <ul class="bul small"><li>Tasa Selic alta pero en ciclo de recortes.</li><li>Situación fiscal y deuda pública alta.</li><li>Real brasileño y flujos extranjeros.</li><li>Commodities: Petrobras (petróleo) y Vale (hierro).</li><li>Bancos (Itaú, Banco do Brasil).</li><li>Valuación barata frente a su historia.</li></ul>
+            <p class="small"><b>Lectura:</b> el balotaje es un riesgo binario. No aumentaría la exposición antes del resultado.</p>
+          </div>
+        </div>
+        <div class="links"><a href="https://es.euronews.com/2026/10/05/b3-se-dispara-tras-bolsonaro-la-bolsa-sube-tras-bolsonaro-ibovespa-gana-8-tras-bolsonaro" target="_blank" rel="noopener">Ibovespa +8% tras Bolsonaro (Euronews)</a></div>
+      </div>
+
+      <div class="sub anchor" id="sub-conceptos">
+        <h3>Conceptos técnicos que debe dominar</h3>
+        <div class="fgrid">
+          <div class="f"><span class="fn">Flujo de caja libre de la firma</span><span class="fx">FCFF = EBIT(1−t) + D&amp;A − CapEx − ΔCT</span><span class="fd">Se descuenta al WACC y da el valor de la empresa (EV).</span></div>
+          <div class="f"><span class="fn">Flujo de caja libre del accionista</span><span class="fx">FCFE = FCFF − Int(1−t) + Deuda neta nueva</span><span class="fd">Se descuenta al Ke y da el valor del patrimonio.</span></div>
+          <div class="f"><span class="fn">Valor de la empresa</span><span class="fx">EV = Σ FCFF<sub>t</sub>/(1+WACC)<sup>t</sup> + VT/(1+WACC)<sup>n</sup></span><span class="fd">VT = FCFF<sub>n+1</sub>/(WACC − g). Patrimonio = EV − deuda neta.</span></div>
+          <div class="f"><span class="fn">WACC</span><span class="fx">WACC = E/V·Ke + D/V·Kd·(1−t)</span><span class="fd">Pesos a valor de mercado.</span></div>
+          <div class="f"><span class="fn">CAPM con riesgo país</span><span class="fx">Ke = Rf + β·ERP + CRP</span><span class="fd">Rf del Treasury a 10 años; CRP a partir del spread soberano.</span></div>
+          <div class="f"><span class="fn">Beta apalancada (Hamada)</span><span class="fx">β<sub>L</sub> = β<sub>U</sub>·[1 + (1−t)·D/E]</span><span class="fd">Para usar betas de comparables.</span></div>
+          <div class="f"><span class="fn">Modelo de dividendos (Gordon)</span><span class="fx">P<sub>0</sub> = D<sub>1</sub>/(Ke − g)</span><span class="fd">Empresas maduras con dividendos estables.</span></div>
+          <div class="f"><span class="fn">P/BV justificado (bancos)</span><span class="fx">P/BV = (ROE − g)/(Ke − g)</span><span class="fd">Si ROE &gt; Ke, el banco cotiza sobre su valor contable.</span></div>
+          <div class="f"><span class="fn">Sharpe</span><span class="fx">(R<sub>p</sub> − R<sub>f</sub>)/σ<sub>p</sub></span><span class="fd">Retorno por unidad de riesgo total.</span></div>
+          <div class="f"><span class="fn">Tracking error e information ratio</span><span class="fx">TE = σ(R<sub>p</sub> − R<sub>b</sub>) · IR = (R<sub>p</sub> − R<sub>b</sub>)/TE</span><span class="fd">Las métricas para evaluar gestores contra un benchmark.</span></div>
+          <div class="f"><span class="fn">Alfa de Jensen</span><span class="fx">α = R<sub>p</sub> − [R<sub>f</sub> + β(R<sub>m</sub> − R<sub>f</sub>)]</span><span class="fd">Retorno por encima del que explica el riesgo de mercado.</span></div>
+          <div class="f"><span class="fn">Varianza de un portafolio de dos activos</span><span class="fx">σ²<sub>p</sub> = w₁²σ₁² + w₂²σ₂² + 2w₁w₂ρσ₁σ₂</span><span class="fd">Diversificar ayuda mientras la correlación sea menor que 1.</span></div>
+        </div>
+        <div class="example"><b class="h">Ejemplo ilustrativo de Ke en dólares</b><p class="num">Rf 5,1% + β 1,0 × ERP 5,0% + riesgo país 1,5% (supuesto) = <b>11,6%</b>. Para pasarlo a soles: (1 + Ke<sub>US$</sub>) × (1 + π<sub>PEN</sub>)/(1 + π<sub>US$</sub>) − 1.</p></div>
+        <div class="grid3">
+          <div class="card"><h4>Múltiplos por sector</h4><p class="small">EV/EBITDA en minería, cemento y telecom (neutral a deuda y depreciación). P/E en consumo y tecnología. P/BV contra ROE en bancos y seguros.</p></div>
+          <div class="card"><h4>Factores</h4><p class="small">Value, growth, momentum, quality, size y baja volatilidad. 2026: momentum de IA fuerte hasta junio, luego rotación hacia value y calidad.</p></div>
+          <div class="card"><h4>Activa vs. pasiva</h4><p class="small">Pasiva (ETFs) donde es difícil ganarle al índice tras costos, como el S&amp;P 500. Activa en mercados menos eficientes (BVL, emergentes, small caps). Esquema core-satellite.</p></div>
+          <div class="card"><h4>Asignación de activos</h4><p class="small">Estratégica (pesos de largo plazo según el benchmark del fondo) y táctica (desviaciones temporales según la coyuntura).</p></div>
+          <div class="card"><h4>Fundamental vs. técnico</h4><p class="small">Fundamental: valor intrínseco por flujos y estados financieros. Técnico: precio, volumen y tendencias (promedios de 50 y 200 días, soportes).</p></div>
+          <div class="card"><h4>Estados financieros</h4><p class="small">Margen EBITDA, ROE y su descomposición DuPont (margen × rotación × apalancamiento), deuda neta/EBITDA, conversión de caja.</p></div>
+        </div>
+        <div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-concepts-basic-tools" target="_blank" rel="noopener">CFA: Equity Valuation</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/free-cash-flow-valuation" target="_blank" rel="noopener">CFA: Free Cash Flow Valuation</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-risk-return-part-2" target="_blank" rel="noopener">CFA: Portfolio Risk and Return II</a><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html" target="_blank" rel="noopener">Damodaran: riesgo país</a></div>
+      </div>
+    </div>
+
+    <!-- 3 DERIVADOS -->
+    <div class="sec anchor" id="sec-der">
+      <div class="sec-head"><div class="eyebrow">Ámbito 3</div><h2><span class="idx">3</span>Derivados</h2><p class="muted">Nivel conceptual con dos cálculos. Habitat sí usa derivados: Control de Inversiones valoriza derivados con el vector de la SBS y Riesgos automatiza sus reportes.</p></div>
+      <div class="grid2">
+        <div class="card">
+          <h4>Forwards y futuros</h4>
+          <p class="small">Fijan hoy el precio de una compra o venta futura. El forward es a medida y fuera de bolsa; el futuro es estandarizado, con margen y liquidación diaria.</p>
+          <div class="f"><span class="fn">Forward de tipo de cambio (paridad cubierta)</span><span class="fx">F = S × (1 + i<sub>PEN</sub>·T)/(1 + i<sub>US$</sub>·T)</span></div>
+          <p class="small num">Ejemplo: S = 3,44; i<sub>PEN</sub> = 4,25%; i<sub>US$</sub> ≈ 4,00%; T = 1 → F = 3,44 × 1,0425/1,04 ≈ <b>3,448</b>. Los puntos forward son pequeños porque las tasas están cerca.</p>
+          <p class="small"><b>Uso en una AFP:</b> casi la mitad del fondo está en el exterior, en dólares. Con forwards cubre parte de esa exposición y reduce la volatilidad del valor cuota en soles.</p>
+        </div>
+        <div class="card">
+          <h4>Opciones</h4>
+          <div class="f"><span class="fn">Payoffs al vencimiento</span><span class="fx">Call = máx(S − K, 0) · Put = máx(K − S, 0)</span></div>
+          <div class="f"><span class="fn">Paridad put-call</span><span class="fx">C − P = S − K·e<sup>−rT</sup></span></div>
+          <p class="small num">Ejemplo: S = 100, K = 100, r = 5%, T = 1 → K·e<sup>−0,05</sup> = 95,12, así que C − P = <b>4,88</b>. Si no se cumple, hay arbitraje.</p>
+          <div class="f"><span class="fn">Black-Scholes (call europea)</span><span class="fx">C = S·N(d₁) − K·e<sup>−rT</sup>·N(d₂)</span><span class="fd">d₁ = [ln(S/K) + (r + σ²/2)T]/(σ√T); d₂ = d₁ − σ√T</span></div>
+          <div class="f"><span class="fn">Árbol binomial (probabilidad neutral al riesgo)</span><span class="fx">p = (e<sup>rΔt</sup> − d)/(u − d)</span></div>
+        </div>
+      </div>
+      <div class="tbl-wrap">
+        <table class="mid">
+          <thead><tr><th>Griega</th><th>Qué mide</th><th>Dato útil</th></tr></thead>
+          <tbody>
+            <tr><td><div class="t">Delta</div></td><td>Cambio del precio de la opción por un cambio de 1 en el subyacente</td><td>Call entre 0 y 1; put entre −1 y 0. At-the-money ≈ 0,5.</td></tr>
+            <tr><td><div class="t">Gamma</div></td><td>Cuánto cambia la delta</td><td>Máxima en opciones at-the-money cerca del vencimiento.</td></tr>
+            <tr><td><div class="t">Vega</div></td><td>Sensibilidad a la volatilidad implícita</td><td>Por eso las puts se encarecen cuando sube el VIX.</td></tr>
+            <tr><td><div class="t">Theta</div></td><td>Pérdida de valor por el paso del tiempo</td><td>Negativa para quien compra opciones.</td></tr>
+            <tr><td><div class="t">Rho</div></td><td>Sensibilidad a la tasa de interés</td><td>Más relevante en opciones largas.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid3">
+        <div class="card"><h4>Swaps</h4><p class="small">De tasa (fija contra variable) y cross-currency (intercambian flujos en dos monedas). Sirven para cambiar la exposición sin vender el activo.</p></div>
+        <div class="card"><h4>Cubrir un portafolio de acciones</h4><p class="small num">Vender futuros del índice: N = β × V/(F × multiplicador). Ejemplo: US$50 millones con β 1,1 y E-mini S&amp;P a 7.659 × 50 = US$382.950 por contrato → N ≈ <b>144</b> contratos. También puts protectoras o un collar (comprar put y vender call).</p></div>
+        <div class="card"><h4>VIX y regulación</h4><p class="small">El VIX es la volatilidad implícita a 30 días del S&amp;P 500. Las AFP peruanas usan derivados sobre todo para cobertura, dentro de los límites de la SBS. El detalle normativo no se verificó: es buena pregunta para la entrevista.</p></div>
+      </div>
+      <div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/pricing-and-valuation-of-forward-commitments" target="_blank" rel="noopener">CFA: forwards</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/pricing-valuation-futures-contracts" target="_blank" rel="noopener">CFA: futuros</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/swaps-forwards-futures-strategies" target="_blank" rel="noopener">CFA: estrategias con swaps, forwards y futuros</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/option-replication-using-put-call-parity" target="_blank" rel="noopener">CFA: paridad put-call</a><a href="https://www.cfainstitute.org/en/membership/professional-development/refresher-readings/valuing-derivative-one-period-binomial-model" target="_blank" rel="noopener">CFA: modelo binomial</a><a href="https://www.optiver.com/insights/explainers/option-greeks/" target="_blank" rel="noopener">Optiver: griegas</a></div>
+    </div>
+
+    <!-- 4 ACTUALIDAD -->
+    <div class="sec anchor" id="sec-actualidad">
+      <div class="sec-head"><div class="eyebrow">Ámbito 4</div><h2><span class="idx">4</span>Actualidad global y local</h2><p class="muted">Línea de tiempo de 2026 y lo que viene después de la entrevista.</p></div>
+      <div class="grid2">
+        <div class="card">
+          <h4>Global</h4>
+          <div class="timeline">
+            <div class="tl"><span class="when">Jun</span><p>BCE sube tasas por primera vez en casi tres años. KOSPI marca su máximo (9.385).</p></div>
+            <div class="tl"><span class="when">16-sep</span><p>La Fed sube a 3,75–4,00% y el BCE a 2,50% el mismo día.</p></div>
+            <div class="tl"><span class="when">2-oct</span><p>Empleo de EE.UU. débil (+29 mil en septiembre); el Treasury a 10 años baja a 5,20% desde ~5,35%. Brent cerca de US$100 por el conflicto con Irán.</p></div>
+            <div class="tl"><span class="when">5-oct</span><p>Ibovespa +8% a récord tras la primera vuelta en Brasil.</p></div>
+            <div class="tl"><span class="when">6-oct</span><p>S&amp;P 500 en récord, cerca de 7.819.</p></div>
+            <div class="tl"><span class="when">15-oct</span><p>IPC de EE.UU. de septiembre en 3,7%: caen Wall Street, Corea (−7,6%) y Japón.</p></div>
+            <div class="tl"><span class="when">16-oct</span><p>Indonesia cae hasta 11% por la consulta de MSCI.</p></div>
+            <div class="tl next"><span class="when">25-oct</span><p>Balotaje en Brasil.</p></div>
+            <div class="tl next"><span class="when">27–29 oct</span><p>Fed (27–28) y BCE (29).</p></div>
+            <div class="tl next"><span class="when">3-nov</span><p>Elecciones de medio término en EE.UU.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Perú y sistema de pensiones</h4>
+          <div class="timeline">
+            <div class="tl"><span class="when">1-jul</span><p>El límite operativo de inversión de las AFP en el exterior sube a 51% (antes 50,5%). El tope legal es 80% (Ley 32428).</p></div>
+            <div class="tl"><span class="when">Jul</span><p>El Congreso saliente no aprobó ninguno de los 9 proyectos de noveno retiro. MEF y SBS se oponían porque contradice la Ley 32123.</p></div>
+            <div class="tl"><span class="when">28-jul</span><p>Keiko Fujimori asume la presidencia; se instala el Congreso bicameral.</p></div>
+            <div class="tl"><span class="when">Sep</span><p>Moody's ratifica Baa1 estable. El BCRP advierte que un posible alza dependerá de El Niño.</p></div>
+            <div class="tl"><span class="when">2-oct</span><p>La BVL supera los 60.000 puntos.</p></div>
+            <div class="tl"><span class="when">8-oct</span><p>El BCRP mantiene 4,25%; inflación de 4,5% en septiembre.</p></div>
+            <div class="tl next"><span class="when">12-nov</span><p>Próxima decisión del BCRP.</p></div>
+          </div>
+          <p class="small"><b>Ley 32123 (reforma de pensiones):</b> reglamentada por el DS 189-2025-EF y modificada por el DS 061-2026-EF.</p>
+        </div>
+      </div>
+      <div class="links"><a href="https://gestion.pe/economia/que-significa-la-ampliacion-al-51-del-limite-de-inversion-para-las-afp-noticia/" target="_blank" rel="noopener">Límite de 51% (Gestión)</a><a href="https://www.bcrp.gob.pe/docs/Transparencia/Notas-Informativas/2026/nota-informativa-2026-01-28.pdf" target="_blank" rel="noopener">Nota informativa BCRP sobre el límite</a><a href="https://www.infobae.com/peru/2026/07/16/adios-al-retiro-afp-en-este-congreso-nueve-proyectos-pedian-liberar-s22000-pero-fueron-ignorados/" target="_blank" rel="noopener">Retiros sin aprobar (Infobae)</a><a href="https://www.infobae.com/peru/2026/05/27/mef-y-sbs-en-contra-del-noveno-retiro-de-afp-contraviene-prohibicion-de-la-ley-n-32123/" target="_blank" rel="noopener">MEF y SBS contra el retiro (Infobae)</a><a href="https://www.gob.pe/institucion/mef/normas-legales/7124901-189-2025-ef" target="_blank" rel="noopener">DS 189-2025-EF (MEF)</a><a href="https://www.infobae.com/peru/2026/09/18/banco-central-de-reserva-sobre-subir-tasa-de-interes-dependera-mucho-de-el-nino/" target="_blank" rel="noopener">BCRP y El Niño (Infobae)</a></div>
+    </div>
+
+    <!-- 5 PREGUNTAS -->
+    <div class="sec anchor" id="sec-preguntas">
+      <div class="sec-head"><div class="eyebrow">Banco de preguntas</div><h2><span class="idx">5</span>40 preguntas con respuesta modelo</h2><p class="muted">Respuestas de 60 a 90 segundos. Que las diga con sus palabras y con un dato cada una.</p></div>
+      <div class="qa-tools">
+        <button class="qa-chip" data-cat="todas" aria-pressed="true">Todas</button>
+        <button class="qa-chip" data-cat="tecnica" aria-pressed="false">Técnicas</button>
+        <button class="qa-chip" data-cat="mercado" aria-pressed="false">Mercado</button>
+        <button class="qa-chip" data-cat="afp" aria-pressed="false">AFP y SPP</button>
+        <button class="qa-chip" data-cat="personal" aria-pressed="false">Personales</button>
+        <input class="qa-search" id="qa-search" type="search" placeholder="Buscar: beta, Corea, encaje…" aria-label="Buscar en preguntas">
+        <button class="qa-toggle" id="qa-toggle" type="button">Abrir todas</button>
+        <span class="qa-count" id="qa-count"></span>
+      </div>
+      <div class="qa-list" id="qa-list">
+        <!-- Técnicas -->
+        <details class="qa-item anchor" data-cat="tecnica" id="q1"><summary><span class="qn">01</span><span class="qq">¿Cómo valorizarías una empresa?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Con tres enfoques que cruzo. Primero, un DCF: proyecto el flujo de caja libre de la firma 5 a 10 años, lo descuento al WACC y sumo un valor terminal con un crecimiento no mayor al nominal de largo plazo; resto la deuda neta para llegar al patrimonio. Segundo, múltiplos de comparables: EV/EBITDA en minería y cemento, P/BV contra ROE en bancos, P/E en consumo. Tercero, el modelo de dividendos si la empresa paga dividendos estables. Al final hago sensibilidad a WACC y g, porque el valor terminal suele explicar más de la mitad del valor.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-concepts-basic-tools" target="_blank" rel="noopener">CFA: Equity Valuation</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/free-cash-flow-valuation" target="_blank" rel="noopener">CFA: Free Cash Flow Valuation</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q2"><summary><span class="qn">02</span><span class="qq">¿Qué diferencia hay entre FCFF y FCFE, y cuándo usas cada uno?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>FCFF = EBIT(1−t) + D&amp;A − CapEx − variación del capital de trabajo: es el flujo para todos los financistas, se descuenta al WACC y da el valor de la empresa. FCFE = FCFF − intereses(1−t) + endeudamiento neto: es el flujo para el accionista, se descuenta al Ke y da directamente el patrimonio. FCFE conviene si la estructura de capital es estable. En bancos se usa FCFE, dividendos o P/BV, porque la deuda es parte del negocio y no solo financiamiento.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/free-cash-flow-valuation" target="_blank" rel="noopener">CFA: Free Cash Flow Valuation</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q3"><summary><span class="qn">03</span><span class="qq">¿Cómo calcularías el costo de capital de una acción peruana?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Con CAPM más prima por riesgo país: Ke = Rf + β × ERP + CRP. La tasa libre de riesgo sale del Treasury a 10 años (hoy ~5,1–5,2%); la prima de mercado, de 4 a 5% (Damodaran publica estimaciones); y el riesgo país, del spread soberano de Perú, ajustado por la mayor volatilidad de las acciones frente a los bonos. Eso da un Ke en dólares. Si los flujos están en soles, lo convierto con el diferencial de inflación: (1 + Ke<sub>US$</sub>) × (1 + π<sub>PEN</sub>)/(1 + π<sub>US$</sub>) − 1.</p><div class="links"><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html" target="_blank" rel="noopener">Damodaran: riesgo país</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q4"><summary><span class="qn">04</span><span class="qq">¿Qué pasa con el valor de una acción si sube la tasa libre de riesgo?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Sube el Ke y también el costo de la deuda, así que cae el valor presente de los flujos. El efecto es mayor en empresas growth, cuyos flujos están lejos en el tiempo (tienen "duración" alta), y menor en empresas value con flujos cercanos y dividendos. En 2026 se vio claro: el múltiplo del S&amp;P bajó de ~23x a ~20x mientras el bono a 10 años pasaba de 5%, aunque las utilidades crecían.</p><div class="links"><a href="https://www.bloomberglinea.com/mercados/el-sp-500-suma-26-maximos-historicos-en-2026-las-10-senales-que-explican-por-que/" target="_blank" rel="noopener">Bloomberg Línea</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q5"><summary><span class="qn">05</span><span class="qq">¿Cuándo usas P/E, EV/EBITDA o P/BV?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>EV/EBITDA es neutral a la estructura de capital y a la depreciación, por eso sirve en sectores intensivos en capital como minería, cemento o telecom. El P/E es intuitivo, pero lo distorsionan el apalancamiento y las partidas extraordinarias; lo uso en consumo y tecnología. En bancos y aseguradoras uso P/BV contra ROE: el P/BV justificado es (ROE − g)/(Ke − g), así que un banco con ROE mayor a su costo de capital merece cotizar sobre su valor contable.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-applications-and-processes" target="_blank" rel="noopener">CFA: Equity Valuation Applications</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q6"><summary><span class="qn">06</span><span class="qq">¿Qué es la beta y cómo la estimas?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Mide la sensibilidad del retorno de la acción al mercado: β = Cov(R<sub>i</sub>, R<sub>m</sub>)/Var(R<sub>m</sub>). Se estima con una regresión de 2 a 5 años de retornos semanales o mensuales. Para comparables la desapalanco y la vuelvo a apalancar con la estructura de la empresa (Hamada): β<sub>L</sub> = β<sub>U</sub>[1 + (1 − t)D/E]. En la BVL, por la baja liquidez, conviene usar betas de comparables internacionales o betas ajustadas.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-risk-return-part-2" target="_blank" rel="noopener">CFA: Portfolio Risk and Return II</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/capital-structure" target="_blank" rel="noopener">CFA: Capital Structure</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q7"><summary><span class="qn">07</span><span class="qq">¿Qué es la prima por riesgo de mercado y cómo está hoy?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Es el retorno extra que se exige por tener acciones en vez de bonos. Una aproximación rápida es el earnings yield (E/P) menos el bono a 10 años. Con el S&amp;P a ~20 veces utilidades, E/P ≈ 5,0%, casi igual al bono (~5,1–5,2%): la prima implícita está cerca de cero. Eso hace que el mercado dependa de que las utilidades sigan creciendo fuerte. Matiz: el E/P se parece a un retorno real y el bono es nominal, así que la comparación exagera el problema.</p><div class="links"><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histimpl.html" target="_blank" rel="noopener">Damodaran: prima implícita</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q8"><summary><span class="qn">08</span><span class="qq">¿Qué diferencia hay entre Sharpe, tracking error e information ratio?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Sharpe = (R<sub>p</sub> − R<sub>f</sub>)/σ<sub>p</sub>: retorno por unidad de riesgo total, para comparar portafolios entre sí. Tracking error = desviación estándar de (R<sub>p</sub> − R<sub>b</sub>): cuánto se aleja un gestor de su benchmark. Information ratio = (R<sub>p</sub> − R<sub>b</sub>)/TE: alfa por unidad de riesgo activo. Es la métrica clave para evaluar gestores externos; un IR sostenido sobre 0,5 se considera bueno.</p><div class="links"><a href="https://en.wikipedia.org/wiki/Information_ratio" target="_blank" rel="noopener">Information ratio</a><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-risk-return-part-2" target="_blank" rel="noopener">CFA: Portfolio Risk and Return II</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q9"><summary><span class="qn">09</span><span class="qq">¿Cómo evaluarías un ETF o un fondo internacional?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>En un ETF: qué índice replica y si calza con el benchmark del fondo, el costo total (TER), qué tan bien replica (tracking difference y tracking error), la liquidez (volumen, spread, tamaño y liquidez de los subyacentes), si la réplica es física o sintética, el domicilio y sus impuestos, y el riesgo de contraparte. En un fondo activo, además: el proceso y equipo del gestor, la consistencia del alfa (information ratio), que no cambie de estilo y las comisiones. Es el tipo de monitoreo que aparece en las convocatorias de Habitat e Integra.</p><div class="links"><a href="https://www.practicas.pe/oferta-convocatoria-practicante-riesgos-inversion-analisis-emisores-practicas-afp-habitat-lima-67513.html" target="_blank" rel="noopener">Convocatoria de Riesgos de Inversión (Habitat)</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q10"><summary><span class="qn">10</span><span class="qq">¿Gestión activa o pasiva?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Depende del mercado. Pasiva donde es difícil ganarle al índice después de costos, como las grandes empresas de EE.UU., usando ETFs baratos. Activa donde hay ineficiencias, poca cobertura de analistas o baja liquidez: la BVL, emergentes, small caps. Una AFP suele combinar ambas en un esquema core-satellite: un núcleo indexado y posiciones activas donde el equipo tiene ventaja.</p></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q11"><summary><span class="qn">11</span><span class="qq">¿Cómo hace benchmarking una AFP?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Cada fondo tiene un benchmark, normalmente una mezcla de índices de renta variable local e internacional y de renta fija con pesos objetivo. Se compara el retorno del fondo contra ese índice compuesto y contra las otras AFP. La diferencia se descompone en asignación (tener más o menos de una clase de activo) y selección (elegir mejores activos dentro de ella). La convocatoria de 2026 de Habitat pide justamente analizar datos para estimar el benchmark de los fondos.</p><div class="links"><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-practicas-afp-habitat-lima-65415.html" target="_blank" rel="noopener">Convocatoria de jun-2026 (Habitat)</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q12"><summary><span class="qn">12</span><span class="qq">¿Por qué le importa la duración a alguien de renta variable?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>La duración mide la sensibilidad del precio a la tasa: ΔP/P ≈ −D<sub>mod</sub> × Δy. Importa por tres razones. La tasa libre de riesgo de la valorización sale de la curva. Las acciones growth se comportan como activos de larga duración. Y en una AFP la renta fija y la renta variable compiten por el mismo presupuesto de riesgo: con el bono de EE.UU. en 5,2%, el analista de acciones tiene que explicar por qué la acción paga más que el bono.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/yield-based-bond-duration-measures-and-properties" target="_blank" rel="noopener">CFA: duración</a><a href="https://macrohive.com/hive-explainers/duration-and-convexity-in-bond-markets" target="_blank" rel="noopener">Macro Hive: duración y convexidad</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q13"><summary><span class="qn">13</span><span class="qq">Explica la paridad put-call.</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>C − P = S − K·e<sup>−rT</sup>. Comprar un call y vender un put con el mismo strike y vencimiento replica un forward sobre la acción. Si la igualdad no se cumple, hay arbitraje: se compra lo barato y se vende lo caro. Ejemplo: S = 100, K = 100, r = 5% y un año: C − P = 100 − 95,12 = 4,88.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/option-replication-using-put-call-parity" target="_blank" rel="noopener">CFA: paridad put-call</a><a href="https://en.wikipedia.org/wiki/Put%E2%80%93call_parity" target="_blank" rel="noopener">Put–call parity</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q14"><summary><span class="qn">14</span><span class="qq">¿Cómo cubrirías un portafolio de acciones ante una caída?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Tres formas. Vender futuros del índice: N = β × V/(F × multiplicador); es barato pero también elimina la subida. Comprar puts protectoras: limitan la caída y mantienen la subida a cambio de la prima, que se encarece cuando sube el VIX. Un collar: comprar un put y vender un call fuera del dinero para financiarlo. En una AFP peruana la cobertura más común es la cambiaria con forwards, no la de índice.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/swaps-forwards-futures-strategies" target="_blank" rel="noopener">CFA: estrategias con derivados</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q15"><summary><span class="qn">15</span><span class="qq">¿Cómo funciona un forward de tipo de cambio y por qué lo usa una AFP?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Fija hoy el tipo de cambio de una fecha futura. Por paridad cubierta de tasas, F = S × (1 + i<sub>PEN</sub>T)/(1 + i<sub>US$</sub>T). Con 3,44, 4,25% en soles y ~4,00% en dólares, el forward a un año sale ~3,448: los puntos son pequeños porque las tasas están cerca. Las AFP lo usan para cubrir parte de su exposición en dólares (casi la mitad del fondo está afuera) y reducir la volatilidad del valor cuota en soles.</p><div class="links"><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/pricing-and-valuation-of-forward-commitments" target="_blank" rel="noopener">CFA: forwards</a></div></div></details>
+        <details class="qa-item anchor" data-cat="tecnica" id="q16"><summary><span class="qn">16</span><span class="qq">¿Qué son delta, gamma, vega y theta?</span><span class="tagcat">Técnica</span></summary><div class="qa-body"><p>Delta: cuánto cambia la opción si el subyacente sube 1 (un call va de 0 a 1). Gamma: cuánto cambia la delta; es máxima en opciones at-the-money cerca del vencimiento. Vega: sensibilidad a la volatilidad implícita. Theta: pérdida de valor por el paso del tiempo, negativa para quien compra opciones.</p><div class="links"><a href="https://www.optiver.com/insights/explainers/option-greeks/" target="_blank" rel="noopener">Optiver: griegas</a></div></div></details>
+
+        <!-- Mercado -->
+        <details class="qa-item anchor" data-cat="mercado" id="q17"><summary><span class="qn">17</span><span class="qq">¿Qué pasa con las acciones si la Fed sube tasas?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Sube la tasa de descuento y se comprimen los múltiplos; el dólar se fortalece y salen flujos de emergentes; sube el costo de financiamiento de las empresas. Pero importa por qué sube. En septiembre la Fed subió y el S&amp;P igual marcó récords en octubre porque las utilidades crecían. El problema es cuando sube por inflación persistente: el 15 de octubre, con el IPC en 3,7%, cayeron Wall Street, Corea y Japón.</p><div class="links"><a href="https://www.elfinanciero.com.mx/economia/2026/10/15/mayor-inflacion-en-eu-tira-a-las-bolsas-y-presiona-al-peso/" target="_blank" rel="noopener">El Financiero, 15-oct</a><a href="https://www.elfinanciero.com.mx/economia/2026/09/16/fed-sube-su-tasa-de-interes-en-un-cuarto-de-punto-se-ubica-en-rango-de-375-a-4/" target="_blank" rel="noopener">Fed sube a 3,75–4%</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q18"><summary><span class="qn">18</span><span class="qq">¿Cómo ves la renta variable de EE.UU.?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>El S&amp;P 500 cerró en 7.659 el 16 de octubre, +11,9% en el año, después de tocar récord a inicios de mes. A favor: utilidades muy fuertes (el BPA del segundo trimestre creció ~33%), recompras récord y flujos a ETFs. En contra: ~20 veces utilidades (el equiponderado ~17x), concentración en IA y un bono sobre 5% que deja la prima de riesgo cerca de cero. Mi lectura es neutral-positiva, prefiriendo diversificar fuera de las megacaps.</p><div class="links"><a href="https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-10162026-nid16102026/" target="_blank" rel="noopener">Cierres 16-oct</a><a href="https://www.bloomberglinea.com/mercados/el-sp-500-suma-26-maximos-historicos-en-2026-las-10-senales-que-explican-por-que/" target="_blank" rel="noopener">Bloomberg Línea</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q19"><summary><span class="qn">19</span><span class="qq">¿Qué pasó con Corea del Sur?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Fue el gran ganador del ciclo de IA: el KOSPI llegó a 9.385 en junio por el boom de memoria HBM (Samsung y SK Hynix llegaron a pesar ~44% del índice) y por el programa "Value-up" de gobierno corporativo. Desde entonces cayó ~40%, hasta 5.668 el 16 de octubre, con días de −7% a −9% y frenos de negociación. Lecciones: concentración extrema, ciclicidad de la memoria, apalancamiento minorista y sensibilidad a las tasas de EE.UU. Aun así sube ~51% a 12 meses.</p><div class="links"><a href="https://es.tradingeconomics.com/south-korea/stock-market" target="_blank" rel="noopener">KOSPI (Trading Economics)</a><a href="https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/kospi-cae-18-en-dos-semanas-se-frena-el-rally-de-la-ia" target="_blank" rel="noopener">XTB</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q20"><summary><span class="qn">20</span><span class="qq">¿Qué pasó en Indonesia y qué lección deja para Perú?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>El 16 de octubre la bolsa de Yakarta cayó hasta 11%, su peor día desde 1998, y acumula cerca de −40% en el año, después de que MSCI abrió una consulta para pasarla de emergente a "standalone" por problemas de transparencia y accesibilidad. Salir de los índices obliga a vender a los fondos pasivos que los replican. Para Perú, la lección es que la clasificación MSCI depende de liquidez, número de emisores elegibles y acceso para extranjeros, y perderla tiene un costo grande en flujos.</p><div class="links"><a href="https://thestar.com.my/business/business-news/2026/10/16/jakarta-stocks-plunge-11-as-msci-set-to-drop-indonesia-from-indexes" target="_blank" rel="noopener">The Star/Reuters</a><a href="https://www.thejakartapost.com/business/2026/10/16/idx-tanks-8-on-latest-msci-stock-market-warning" target="_blank" rel="noopener">Jakarta Post</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q21"><summary><span class="qn">21</span><span class="qq">¿Cómo está China?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>El CSI 300 cerró en 4.171 el 16 de octubre, en mínimos de 13 meses y unos 12% debajo de enero, tras un 2025 fuerte (+18%; Hang Seng +28%). Pesan la competencia en chips, las dudas sobre el gasto en IA y la relación con EE.UU. A favor: valuaciones bajas, IA local y un yuan firme. Algunos gestores, como UBS, la ven atractiva; para mí es un mercado de gestión activa y selectiva.</p><div class="links"><a href="https://tradingeconomics.com/shsz300:ind" target="_blank" rel="noopener">CSI 300</a><a href="https://www.scmp.com/business/banking-finance/article/3339265/chinese-ai-stocks-drive-market-gains-2026-though-pace-set-cool-banks-say" target="_blank" rel="noopener">SCMP</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q22"><summary><span class="qn">22</span><span class="qq">¿Y Europa?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>El BCE subió dos veces en 2026, hasta 2,50%, por la inflación de energía (3,3% en agosto, con el Brent cerca de US$100). Eso frena el crecimiento pero ayuda a los bancos. Los gestores están divididos: UBS subió la eurozona a Atractivo y Amundi apuesta por la inversión en defensa, energía e infraestructura; J.P. Morgan la deja neutral. Si la inflación reacelera, Goldman Sachs cree que Europa, más value y de "corta duración", puede ganarle a EE.UU.</p><div class="links"><a href="https://www.finect.com/usuario/davidcarmona/articulos/reunion-bce-septiembre-2026-el-mercado-da-por-hecha-una-subida-de-tipos-al-250" target="_blank" rel="noopener">BCE (Finect)</a><a href="https://research-center.amundi.com/article/2026-mid-year-outlook" target="_blank" rel="noopener">Amundi</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q23"><summary><span class="qn">23</span><span class="qq">¿Qué opinas de la BVL hoy?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Constructivo pero selectivo. A favor: el índice general superó 60.000 puntos (~+37% en el año), el cobre está cerca de máximos, el riesgo político bajó tras la elección y las calificaciones están estables. En contra: buena parte ya está en precio, el BCRP no puede recortar con inflación sobre la meta, existe el riesgo de un noveno retiro de AFP y el mercado es poco líquido. Preferiría mineras de cobre de bajo costo y bancos con ROE alto.</p><div class="links"><a href="https://www.infobae.com/peru/2026/10/02/bvl-supera-los-60000-puntos-bolsa-limena-abrio-al-alza-junto-a-wall-street/" target="_blank" rel="noopener">Infobae</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q24"><summary><span class="qn">24</span><span class="qq">¿Cómo afecta el cobre a la BVL y al sol?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Perú es el segundo productor mundial de cobre. El precio mueve las utilidades de Southern y Cerro Verde, que pesan mucho en el índice, y también la recaudación fiscal, los términos de intercambio y la oferta de dólares, lo que aprecia el sol. Hoy está cerca de máximos (~US$14.500 por tonelada) por huelgas en Chile y la demanda de electrificación e IA. Riesgos: una desaceleración de China o un dólar más fuerte por la Fed.</p><div class="links"><a href="https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/cobre-cerca-de-su-maximo-historico-huelgas-en-chile-demanda-de-la-inteligencia-artificial-y-una-fed-que-sube-tasas" target="_blank" rel="noopener">XTB, 13-oct</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q25"><summary><span class="qn">25</span><span class="qq">¿Qué está pasando en Brasil?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Flávio Bolsonaro ganó la primera vuelta (47% contra 45% de Lula) y el Ibovespa subió ~8% a récord el 5 de octubre, con el real fortaleciéndose a ~4,98. El mercado apuesta por un giro fiscal: control de deuda y privatizaciones. Drivers: la Selic alta pero bajando, la deuda pública, commodities (Petrobras, Vale), bancos, flujos extranjeros y valuación barata. El balotaje del 25 de octubre es un riesgo binario; no subiría la exposición antes del resultado.</p><div class="links"><a href="https://es.euronews.com/2026/10/05/b3-se-dispara-tras-bolsonaro-la-bolsa-sube-tras-bolsonaro-ibovespa-gana-8-tras-bolsonaro" target="_blank" rel="noopener">Euronews</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q26"><summary><span class="qn">26</span><span class="qq">¿Qué dicen los grandes gestores?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Seguir en acciones pero diversificar. J.P. Morgan y BlackRock sobreponderan EE.UU. (J.P. Morgan también Japón). Goldman Sachs tiene alta convicción en emergentes y en small caps de EE.UU. UBS ve atractivas la eurozona, Japón y emergentes como China, Corea e India. En renta fija la mayoría prefiere calidad de plazo corto e intermedio y desconfía de la duración larga en EE.UU. Riesgos comunes: una Fed más agresiva, la energía y una decepción en IA.</p><div class="links"><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/" target="_blank" rel="noopener">J.P. Morgan</a><a href="https://am.gs.com/en-us/advisors/insights/article/market-know-how" target="_blank" rel="noopener">Goldman Sachs AM</a><a href="https://advisors.ubs.com/mediahandler/media/823469/UBS%20House%20View%20for%20August%202026.pdf" target="_blank" rel="noopener">UBS</a></div></div></details>
+        <details class="qa-item anchor" data-cat="mercado" id="q27"><summary><span class="qn">27</span><span class="qq">¿Qué hizo el BCRP y qué esperas?</span><span class="tagcat">Mercado</span></summary><div class="qa-body"><p>Mantuvo la tasa en 4,25% en octubre; no la mueve desde el último recorte de septiembre de 2025. La inflación, 4,5% en septiembre, está sobre el rango meta por combustibles, electricidad y transporte, pero las expectativas (3,1%) siguen cerca del rango y el BCRP espera que el choque sea temporal. Riesgos al alza: El Niño y el petróleo. No espero recortes pronto; una alza dependería de que se desanclen las expectativas.</p><div class="links"><a href="https://www.infobae.com/peru/2026/10/08/tasa-del-bcrp-seguira-en-425-inflacion-aun-supera-el-rango-meta/" target="_blank" rel="noopener">Infobae, 8-oct</a><a href="https://www.infobae.com/peru/2026/09/18/banco-central-de-reserva-sobre-subir-tasa-de-interes-dependera-mucho-de-el-nino/" target="_blank" rel="noopener">BCRP y El Niño</a></div></div></details>
+
+        <!-- AFP -->
+        <details class="qa-item anchor" data-cat="afp" id="q28"><summary><span class="qn">28</span><span class="qq">¿Qué es un multifondo?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>Son cuatro fondos según el perfil de riesgo y la edad. Fondo 0, de protección de capital, sin renta variable. Fondo 1, conservador, hasta 10% en renta variable. Fondo 2, mixto, hasta 45%; es el fondo por defecto. Fondo 3, de crecimiento, hasta 80%, solo para menores de 60 años. Desde los 60 a 65 años el afiliado pasa por defecto a fondos más conservadores.</p><div class="links"><a href="https://www.afphabitat.com.pe/aprende-de-prevision/afp/tipos-de-fondo-afp/" target="_blank" rel="noopener">Tipos de fondo (Habitat)</a></div></div></details>
+        <details class="qa-item anchor" data-cat="afp" id="q29"><summary><span class="qn">29</span><span class="qq">¿Por qué una AFP invierte en el exterior y cuánto puede invertir?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>Para diversificar: la BVL es pequeña, poco líquida y concentrada en minería y bancos. Afuera hay sectores que no existen en Perú (tecnología, salud) y una mejor relación entre retorno y riesgo. El límite operativo lo fija el BCRP: 51% desde el 1 de julio de 2026, antes 50,5%. El tope legal subió a 80% con la Ley 32428, y el BCRP lo amplía de forma gradual.</p><div class="links"><a href="https://gestion.pe/economia/que-significa-la-ampliacion-al-51-del-limite-de-inversion-para-las-afp-noticia/" target="_blank" rel="noopener">Gestión</a><a href="https://www.bcrp.gob.pe/docs/Transparencia/Notas-Informativas/2026/nota-informativa-2026-01-28.pdf" target="_blank" rel="noopener">BCRP</a></div></div></details>
+        <details class="qa-item anchor" data-cat="afp" id="q30"><summary><span class="qn">30</span><span class="qq">¿Cómo afecta un retiro de fondos AFP al mercado?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>La AFP tiene que vender activos para pagar: liquida posiciones locales e internacionales y repatría dólares, lo que aprecia el sol en el corto plazo. Baja la profundidad del mercado local, lo que puede afectar la clasificación MSCI. Para el afiliado, reduce su ahorro y su pensión futura. En 2026 hubo nueve proyectos de retiro y ninguno se aprobó; el MEF y la SBS se opusieron porque contradice la Ley 32123.</p><div class="links"><a href="https://www.infobae.com/peru/2026/07/16/adios-al-retiro-afp-en-este-congreso-nueve-proyectos-pedian-liberar-s22000-pero-fueron-ignorados/" target="_blank" rel="noopener">Infobae</a><a href="https://www.sbs.gob.pe/boletin/detalleboletin/idbulletin/2291?title=Sistema+privado+de+pensiones%3A+un+retiro+m%C3%A1s+s%C3%AD+importa" target="_blank" rel="noopener">SBS: un retiro más sí importa</a></div></div></details>
+        <details class="qa-item anchor" data-cat="afp" id="q31"><summary><span class="qn">31</span><span class="qq">¿Qué cambia con la Ley 32123?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>Es la Ley de Modernización del Sistema Previsional. Entre sus cambios: pensión mínima, afiliación progresiva de grupos que hoy no aportan (independientes y jóvenes), más competencia en la administración de fondos y la restricción de nuevos retiros. Está reglamentada por el DS 189-2025-EF y su modificación, el DS 061-2026-EF.</p><div class="links"><a href="https://www.gob.pe/institucion/mef/normas-legales/7124901-189-2025-ef" target="_blank" rel="noopener">DS 189-2025-EF</a><a href="https://www.gob.pe/institucion/mef/normas-legales/8058441-061-2026-ef" target="_blank" rel="noopener">DS 061-2026-EF</a></div></div></details>
+        <details class="qa-item anchor" data-cat="afp" id="q32"><summary><span class="qn">32</span><span class="qq">¿Qué es el valor cuota y la rentabilidad nominal y real?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>El fondo se divide en cuotas: valor cuota = valor del fondo / número de cuotas. La rentabilidad nominal es la variación del valor cuota y la real descuenta la inflación. Ejemplo: el Fondo 3 de Habitat ganó 39,98% nominal y 34,03% real en los 12 meses a agosto de 2026.</p><div class="links"><a href="https://www.rankia.pe/blog/sistema-privado-pensiones/7487578-rentabilidad-afp-agosto-2026-habitat-fondo-3" target="_blank" rel="noopener">Rankia</a><a href="https://www.sbs.gob.pe/app/stats_net/stats/EstadisticaSistemaAFPs.aspx" target="_blank" rel="noopener">SBS: boletines del SPP</a></div></div></details>
+        <details class="qa-item anchor" data-cat="afp" id="q33"><summary><span class="qn">33</span><span class="qq">¿Qué son el encaje y el vector de precios de la SBS?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>El encaje es capital propio que la AFP invierte en el mismo fondo, en un porcentaje que fija la SBS, para alinear sus intereses con los del afiliado. El vector de precios es la lista diaria de precios oficiales que publica la SBS para que todas las AFP valoricen sus carteras igual. Ambos aparecen en las funciones de back y middle office de las convocatorias.</p><div class="links"><a href="https://www.practicas.pe/oferta-convocatoria-practicante-control-inversiones-practicas-afp-habitat-lima-68807.html" target="_blank" rel="noopener">Control de Inversiones (Habitat)</a></div></div></details>
+        <details class="qa-item anchor" data-cat="afp" id="q34"><summary><span class="qn">34</span><span class="qq">¿Qué es la licitación de afiliados y cómo están las comisiones?</span><span class="tagcat">AFP</span></summary><div class="qa-body"><p>La SBS licita periódicamente la afiliación de quienes entran al sistema: gana la AFP con la comisión más baja y recibe a todos los nuevos afiliados por un período fijo. Habitat entró al Perú en 2013 ganando la primera licitación. Hoy tiene la comisión sobre remuneración más baja (1,47%); en la comisión sobre saldo, Profuturo (0,68%) e Integra (0,78%) cobran menos que Habitat y Prima (1,25%).</p><div class="links"><a href="https://tramitesperu.com/comparadores/afp-comisiones/" target="_blank" rel="noopener">Comisiones AFP</a></div></div></details>
+
+        <!-- Personales -->
+        <details class="qa-item anchor" data-cat="personal" id="q35"><summary><span class="qn">35</span><span class="qq">¿Por qué Habitat?</span><span class="tagcat">Personal</span></summary><div class="qa-body"><p>Modelo: "Por su historial de inversiones: el Fondo 3 fue el más rentable del sistema en los últimos 12 meses (39,98%) y también lideró en los Fondos 0 y 1. Además tiene la comisión sobre remuneración más baja y el respaldo de su grupo en Chile y de Prudential. Y el puesto me interesa porque trabaja con las jefaturas de Renta Variable, Renta Fija y Alternativos y prepara material para el Comité de Inversiones: es la forma más completa de aprender cómo se arma un portafolio."</p><div class="links"><a href="https://www.rankia.pe/blog/sistema-privado-pensiones/7487578-rentabilidad-afp-agosto-2026-habitat-fondo-3" target="_blank" rel="noopener">Rankia</a><a href="https://www.afphabitat.com.pe/nosotros/" target="_blank" rel="noopener">Habitat · Nosotros</a></div></div></details>
+        <details class="qa-item anchor" data-cat="personal" id="q36"><summary><span class="qn">36</span><span class="qq">Cuéntame de ti. ¿Por qué renta variable si llevaste renta fija?</span><span class="tagcat">Personal</span></summary><div class="qa-body"><p>Estructura de 60 segundos: presente (ciclo, carrera, qué está estudiando), pasado (un logro concreto con un número) y futuro (por qué este puesto). Puente: "Renta fija me dio la base del costo de capital. Hoy, con el bono de EE.UU. sobre 5%, entender bonos es clave para saber cuánto debe rendir una acción. Quiero llevar esa base a la valorización de acciones."</p></div></details>
+        <details class="qa-item anchor" data-cat="personal" id="q37"><summary><span class="qn">37</span><span class="qq">Cuéntame de un análisis que hiciste (o de un error).</span><span class="tagcat">Personal</span></summary><div class="qa-body"><p>Usar el método STAR: situación, tarea, acción y resultado, con un número al final. Si es un error, mostrar qué cambió en su forma de trabajar (por ejemplo, validar datos antes de presentar). La convocatoria de 2026 valora la atención al detalle y la paciencia para validar datos.</p></div></details>
+        <details class="qa-item anchor" data-cat="personal" id="q38"><summary><span class="qn">38</span><span class="qq">¿Cómo te informas? ¿Qué noticia te llamó la atención esta semana?</span><span class="tagcat">Personal</span></summary><div class="qa-body"><p>Fuentes: Gestión, Bloomberg Línea, Reuters, la Nota Semanal del BCRP, los boletines de la SBS y los reportes de gestores. Noticia: Indonesia cayendo 11% por la consulta de MSCI, y por qué importa para Perú; o el IPC de EE.UU. del 15 de octubre y su efecto en Corea. Cerrar con una opinión propia.</p></div></details>
+        <details class="qa-item anchor" data-cat="personal" id="q39"><summary><span class="qn">39</span><span class="qq">¿Qué acción recomendarías?</span><span class="tagcat">Personal</span></summary><div class="qa-body"><p>Usar la estructura de la tesis de 2 minutos (abajo) con una acción que conozca bien, local o global. Debe incluir la valuación con un múltiplo contra su historia o sus pares y al menos dos riesgos. Mejor una tesis prudente y bien argumentada que una muy optimista sin números.</p></div></details>
+        <details class="qa-item anchor" data-cat="personal" id="q40"><summary><span class="qn">40</span><span class="qq">¿Tienes preguntas para nosotros?</span><span class="tagcat">Personal</span></summary><div class="qa-body"><p>Siempre tener 2 o 3. Ver la lista de preguntas sugeridas debajo.</p></div></details>
+        <p class="qa-empty" id="qa-empty" hidden>No hay preguntas con ese filtro.</p>
+      </div>
+
+      <div class="sub anchor" id="sub-tesis">
+        <h3>Tesis de inversión en 2 minutos</h3>
+        <ol class="thesis">
+          <li><b>Recomendación</b><span>Comprar, mantener o vender; horizonte de 12 meses; potencial aproximado.</span></li>
+          <li><b>El negocio</b><span>Qué hace, cuál es su driver principal y en qué moneda gana.</span></li>
+          <li><b>Catalizadores</b><span>Dos o tres eventos concretos que muevan el precio.</span></li>
+          <li><b>Valuación</b><span>Un múltiplo contra su historia y sus pares, o un DCF rápido.</span></li>
+          <li><b>Riesgos</b><span>Qué te haría cambiar de opinión.</span></li>
+          <li><b>En el portafolio</b><span>Peso frente al benchmark, liquidez y límites.</span></li>
+        </ol>
+        <div class="example"><b class="h">Esqueleto de ejemplo (sin cifras, que las complete el alumno)</b><p class="small"><b>Credicorp, sobreponderar a 12 meses.</b> Mayor grupo financiero del Perú (BCP, Mibanco, Pacífico, Yape). Driver: crédito, margen financiero y costo de riesgo. Catalizadores: recuperación del crédito con menor ruido político, monetización de Yape, tasas estables. Valuación: P/BV contra su ROE histórico y contra pares (IFS, bancos de la región). Riesgos: un retiro de AFP, mora por El Niño, ruido político. Portafolio: alta liquidez por su ADR en Nueva York; peso frente al benchmark local.</p></div>
+
+        <h3 style="margin-top:10px">Preguntas para el entrevistador</h3>
+        <ul class="bul" style="max-width:80ch">
+          <li>¿Cómo se reparte el trabajo del practicante entre las jefaturas de Renta Variable, Renta Fija y Alternativos?</li>
+          <li>¿Qué parte de la renta variable internacional se gestiona con ETFs y fondos de terceros y qué parte con acciones directas?</li>
+          <li>¿Cómo se construye el benchmark de cada fondo y cada cuánto se revisa?</li>
+          <li>¿Cómo cambió la estrategia con la ampliación del límite en el exterior?</li>
+          <li>¿Qué herramientas usa el equipo en el día a día (Bloomberg, Python, Power BI)?</li>
+          <li>¿Qué distingue a un practicante que después se queda en el equipo?</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6 LINKS -->
+    <div class="sec anchor" id="sec-links">
+      <div class="sec-head"><div class="eyebrow">Biblioteca</div><h2><span class="idx">6</span>Links verificados</h2><p class="muted">"Leído": la página se abrió y su contenido respalda lo citado. "Ubicado": la dirección exacta existe en el buscador, pero no se leyó completa. "Portada": sitio para seguir noticias.</p></div>
+
+      <div class="note">
+        <h4>Cifras a reconfirmar el día de la entrevista</h4>
+        <ul>
+          <li><b>KOSPI:</b> algunos reportes daban +97% en el año; eso corresponde al pico. Al 16-oct está en 5.668, ~40% debajo del máximo de junio.</li>
+          <li><b>BVL:</b> el ~37% en el año es al 9 de octubre. Usar el cierre más reciente.</li>
+          <li><b>Brasil:</b> el nivel de la Selic y la deuda pública vienen de prensa no verificada aquí.</li>
+          <li><b>Cobre, oro y petróleo:</b> muy volátiles; revisar el precio del día.</li>
+          <li><b>Riesgo país de Perú (EMBIG):</b> no hallé un dato reciente confiable; revisar la Nota Semanal del BCRP.</li>
+          <li><b>Normativa SBS de derivados de las AFP:</b> no verificada.</li>
+        </ul>
+      </div>
+
+      <div class="tbl-wrap">
+        <table class="wide">
+          <thead><tr><th>Recurso</th><th>Fuente · fecha</th><th>Para qué sirve</th><th>Estado</th></tr></thead>
+          <tbody>
+            <tr class="group"><td colspan="4">Noticias para seguir a diario</td></tr>
+            <tr><td><a href="https://gestion.pe/" target="_blank" rel="noopener">Gestión</a></td><td>Diario económico peruano</td><td>BVL, BCRP, AFP, empresas peruanas</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://www.bloomberglinea.com/" target="_blank" rel="noopener">Bloomberg Línea</a></td><td>Medio regional</td><td>Mercados de Latinoamérica y Wall Street en español</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/" target="_blank" rel="noopener">Infobae Perú</a></td><td>Medio digital</td><td>Cobertura diaria de BVL, BCRP y retiros AFP</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://semanaeconomica.com/" target="_blank" rel="noopener">Semana Económica</a></td><td>Revista de negocios</td><td>Análisis de empresas y sectores en Perú</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://www.reuters.com/markets/" target="_blank" rel="noopener">Reuters Markets</a></td><td>Agencia internacional</td><td>Mercados globales, bancos centrales</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener">BCRP</a></td><td>Banco central</td><td>Nota Semanal, programa monetario, estadísticas</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://www.sbs.gob.pe/" target="_blank" rel="noopener">SBS</a></td><td>Regulador</td><td>Boletines del sistema de pensiones</td><td><span class="pill">Portada</span></td></tr>
+            <tr><td><a href="https://www.bvl.com.pe/" target="_blank" rel="noopener">Bolsa de Valores de Lima</a></td><td>Bolsa</td><td>Cotizaciones, índices, hechos de importancia</td><td><span class="pill">Portada</span></td></tr>
+
+            <tr class="group"><td colspan="4">Convocatorias</td></tr>
+            <tr><td><a href="https://www.practicas.pe/pre-profesional-en-practicas-afp-habitat-470.html" target="_blank" rel="noopener">Listado de prácticas de Habitat</a></td><td>practicas.pe · oct-2026</td><td>30 ofertas de Habitat, vigentes y pasadas</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-practicas-afp-habitat-lima-65415.html" target="_blank" rel="noopener">Practicante de Inversiones (65415)</a></td><td>practicas.pe · cierre 16-jun-2026</td><td>La descripción más completa del puesto</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-habitat-lima-56099.html" target="_blank" rel="noopener">Practicante de Inversiones (56099)</a></td><td>practicas.pe · cierre 1-dic-2025</td><td>Herramientas: SQL, Power BI, Python, VBA</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-habitat-lima-50956.html" target="_blank" rel="noopener">Practicante de Inversiones (50956)</a></td><td>practicas.pe · cierre 24-jul-2025</td><td>Seguimiento de mercados y límites</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-habitat-lima-23466.html" target="_blank" rel="noopener">Practicante para Inversiones (23466)</a></td><td>practicas.pe · cierre 24-jul-2023</td><td>Benchmarking, emisores, alternativos</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-control-inversiones-practicas-afp-habitat-lima-68807.html" target="_blank" rel="noopener">Control de Inversiones (68807)</a></td><td>practicas.pe · cierre 21-sep-2026</td><td>Middle office, vectores y derivados</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-riesgos-inversion-analisis-emisores-practicas-afp-habitat-lima-67513.html" target="_blank" rel="noopener">Riesgos de Inversión (67513)</a></td><td>practicas.pe · cierre 9-ago-2026</td><td>VaR, tracking error, ETFs</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicante-inversiones-afp-integra-lima-49323.html" target="_blank" rel="noopener">Integra · Practicante de Inversiones (49323)</a></td><td>practicas.pe · cierre 12-jun-2025</td><td>Referencia de otra AFP</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.practicas.pe/oferta-convocatoria-practicas-economia-administracion-carreras-afines-afp-prima-lima-7282.html" target="_blank" rel="noopener">Prácticas back office (7282)</a></td><td>practicas.pe · cierre 22-sep-2021</td><td>Vectores, encaje, valorización</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.linkedin.com/in/roger-mogrovejo-14863511/" target="_blank" rel="noopener">Post compartido por el Investment Director</a></td><td>LinkedIn · oct-2026</td><td>Convocatoria vigente</td><td><span class="pill ref">Requiere sesión</span></td></tr>
+
+            <tr class="group"><td colspan="4">Habitat y sistema de pensiones</td></tr>
+            <tr><td><a href="https://www.afphabitat.com.pe/aprende-de-prevision/afp/tipos-de-fondo-afp/" target="_blank" rel="noopener">Tipos de fondo AFP: 0, 1, 2 y 3</a></td><td>Habitat</td><td>Límites de renta variable por fondo</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.afphabitat.com.pe/aprende-de-prevision/afp/todo-sobre-fondo-3-afp/" target="_blank" rel="noopener">Fondo 3: qué es y cómo funciona</a></td><td>Habitat</td><td>El fondo con más renta variable</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.afphabitat.com.pe/multifondos/" target="_blank" rel="noopener">Multifondos</a></td><td>Habitat</td><td>Rentabilidad y valor cuota de sus fondos</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.afphabitat.com.pe/nosotros/" target="_blank" rel="noopener">Nosotros</a></td><td>Habitat</td><td>Historia y respaldo de la empresa</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.rankia.pe/blog/sistema-privado-pensiones/7487578-rentabilidad-afp-agosto-2026-habitat-fondo-3" target="_blank" rel="noopener">Rentabilidad AFP a agosto 2026</a></td><td>Rankia · 28-sep-2026, datos SBS</td><td>Ranking por fondo y AFP</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://tramitesperu.com/comparadores/afp-comisiones/" target="_blank" rel="noopener">Comisiones AFP</a></td><td>Trámites Perú · datos may-2026</td><td>Comisiones por flujo y saldo</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.sbs.gob.pe/app/stats_net/stats/EstadisticaSistemaAFPs.aspx" target="_blank" rel="noopener">Boletines estadísticos del SPP</a></td><td>SBS</td><td>Cifras oficiales del sistema</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.sbs.gob.pe/boletin/detalleboletin/idbulletin/2291?title=Sistema+privado+de+pensiones%3A+un+retiro+m%C3%A1s+s%C3%AD+importa" target="_blank" rel="noopener">Un retiro más sí importa</a></td><td>SBS</td><td>Efecto de los retiros</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://gestion.pe/economia/que-significa-la-ampliacion-al-51-del-limite-de-inversion-para-las-afp-noticia/" target="_blank" rel="noopener">Qué significa el límite de 51%</a></td><td>Gestión · 3-jul-2026</td><td>Límite en el exterior</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://gestion.pe/economia/mercados/afp-podran-invertir-hasta-80-en-el-exterior-pero-bcr-tiene-ultima-palabra-por-que-noticia/" target="_blank" rel="noopener">AFP podrán invertir hasta 80% en el exterior</a></td><td>Gestión</td><td>Tope legal y rol del BCRP</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.bcrp.gob.pe/docs/Transparencia/Notas-Informativas/2026/nota-informativa-2026-01-28.pdf" target="_blank" rel="noopener">Nota informativa: límite en el exterior</a></td><td>BCRP · 28-ene-2026</td><td>Fuente oficial</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.bcrp.gob.pe/docs/Transparencia/Normas-Legales/Circulares/2026/circular-0004-2026-bcrp.pdf" target="_blank" rel="noopener">Circular 0004-2026-BCRP</a></td><td>BCRP · 2026</td><td>Norma del límite</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.gob.pe/institucion/mef/normas-legales/7124901-189-2025-ef" target="_blank" rel="noopener">DS 189-2025-EF</a></td><td>MEF</td><td>Reglamento de la Ley 32123</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.gob.pe/institucion/mef/normas-legales/8058441-061-2026-ef" target="_blank" rel="noopener">DS 061-2026-EF</a></td><td>MEF</td><td>Modificación del reglamento</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/2026/07/16/adios-al-retiro-afp-en-este-congreso-nueve-proyectos-pedian-liberar-s22000-pero-fueron-ignorados/" target="_blank" rel="noopener">Nueve proyectos de retiro sin aprobar</a></td><td>Infobae · 16-jul-2026</td><td>Estado de los retiros</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/2026/05/27/mef-y-sbs-en-contra-del-noveno-retiro-de-afp-contraviene-prohibicion-de-la-ley-n-32123/" target="_blank" rel="noopener">MEF y SBS contra el noveno retiro</a></td><td>Infobae · 27-may-2026</td><td>Posición del regulador</td><td><span class="pill">Ubicado</span></td></tr>
+
+            <tr class="group"><td colspan="4">Tasas y macro</td></tr>
+            <tr><td><a href="https://www.elfinanciero.com.mx/economia/2026/09/16/fed-sube-su-tasa-de-interes-en-un-cuarto-de-punto-se-ubica-en-rango-de-375-a-4/" target="_blank" rel="noopener">Fed sube a 3,75–4%</a></td><td>El Financiero · 16-sep-2026</td><td>Decisión de la Fed</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.elnacional.com/2026/09/la-fed-eleva-las-tasas-y-anticipa-nuevos-aumentos-antes-de-terminar-2026/" target="_blank" rel="noopener">La Fed anticipa nuevos aumentos</a></td><td>El Nacional · sep-2026</td><td>Guía de la Fed</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.elfinanciero.com.mx/economia/2026/10/15/mayor-inflacion-en-eu-tira-a-las-bolsas-y-presiona-al-peso/" target="_blank" rel="noopener">Mayor inflación en EE.UU. tira a las bolsas</a></td><td>El Financiero · 15-oct-2026</td><td>IPC de septiembre y reacción</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.finect.com/usuario/davidcarmona/articulos/reunion-bce-septiembre-2026-el-mercado-da-por-hecha-una-subida-de-tipos-al-250" target="_blank" rel="noopener">BCE sube a 2,50%</a></td><td>Finect · 10 y 25-sep-2026</td><td>Tasas, inflación y proyecciones del BCE</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.estrategiasdeinversion.com/analisis/bolsa-y-mercados/informes/el-bce-mantiene-tipos-en-el-225-n-937665" target="_blank" rel="noopener">BCE mantiene 2,25% en julio</a></td><td>Estrategias de Inversión · 23-jul-2026</td><td>Contexto del ciclo del BCE</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/2026/10/08/tasa-del-bcrp-seguira-en-425-inflacion-aun-supera-el-rango-meta/" target="_blank" rel="noopener">Tasa del BCRP seguirá en 4,25%</a></td><td>Infobae · 8-oct-2026</td><td>Decisión e inflación de Perú</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/2026/09/18/banco-central-de-reserva-sobre-subir-tasa-de-interes-dependera-mucho-de-el-nino/" target="_blank" rel="noopener">BCRP: subir la tasa dependerá de El Niño</a></td><td>Infobae · 18-sep-2026</td><td>Riesgos de inflación</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://rpp.pe/economia/economia/moodys-mantiene-calificacion-de-peru-en-baa1-con-perspectiva-estable-destaca-mayor-estabilidad-politica-pero-advierte-riesgos-fiscales-noticia-1708848" target="_blank" rel="noopener">Moody's mantiene Baa1</a></td><td>RPP · sep-2026</td><td>Calificación soberana</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://elperuano.pe/noticia/301714-calificacion-crediticia-del-peru-puede-fortalecerse" target="_blank" rel="noopener">Calificación del Perú puede fortalecerse</a></td><td>El Peruano</td><td>Fitch y S&amp;P</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://elperuano.pe/noticia/305476--moodys-ratings-peru-mantiene-su-fortaleza-crediticia" target="_blank" rel="noopener">Perú mantiene su fortaleza crediticia</a></td><td>El Peruano</td><td>Moody's: crecimiento y proyectos</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.bcrp.gob.pe/transparencia/actividades-oficiales/notas-informativas.html" target="_blank" rel="noopener">Notas informativas</a></td><td>BCRP</td><td>Comunicados de política monetaria</td><td><span class="pill">Ubicado</span></td></tr>
+
+            <tr class="group"><td colspan="4">Renta variable</td></tr>
+            <tr><td><a href="https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-10162026-nid16102026/" target="_blank" rel="noopener">Cierres de Wall Street 16-oct</a></td><td>La Nación / AP · 16-oct-2026</td><td>Niveles y rendimiento en el año</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.bloomberglinea.com/mercados/el-sp-500-suma-26-maximos-historicos-en-2026-las-10-senales-que-explican-por-que/" target="_blank" rel="noopener">S&amp;P 500: 26 máximos y 10 señales</a></td><td>Bloomberg Línea · 12-ago-2026</td><td>Utilidades, valuación, flujos</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.bloomberglinea.com/mercados/la-lista-de-objetivos-del-sp-500-en-2026-hasta-donde-puede-llegar-tras-romper-record/" target="_blank" rel="noopener">Objetivos del S&amp;P 500 en 2026</a></td><td>Bloomberg Línea</td><td>Metas de los bancos</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://es.tradingeconomics.com/south-korea/stock-market" target="_blank" rel="noopener">KOSPI</a></td><td>Trading Economics · 16-oct-2026</td><td>Nivel, máximo y noticias</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/kospi-cae-18-en-dos-semanas-se-frena-el-rally-de-la-ia" target="_blank" rel="noopener">Kospi cae 18% en dos semanas</a></td><td>XTB · 7-jul-2026</td><td>Concentración en Samsung y SK Hynix</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.xtb.com/lat/analisis-y-noticias/analisis-de-mercado/bolsa-de-corea-del-sur-el-rally-del-kospi-depende-demasiado-de-samsung-y-sk-hynix" target="_blank" rel="noopener">¿El rally del KOSPI depende de Samsung y SK Hynix?</a></td><td>XTB</td><td>Drivers del rally</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://thestar.com.my/business/business-news/2026/10/16/jakarta-stocks-plunge-11-as-msci-set-to-drop-indonesia-from-indexes" target="_blank" rel="noopener">Jakarta cae 11% por MSCI</a></td><td>The Star / Reuters · 16-oct-2026</td><td>Caso Indonesia</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.thejakartapost.com/business/2026/10/16/idx-tanks-8-on-latest-msci-stock-market-warning" target="_blank" rel="noopener">IDX y la advertencia de MSCI</a></td><td>The Jakarta Post · 16-oct-2026</td><td>Caso Indonesia, visión local</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://tradingeconomics.com/shsz300:ind" target="_blank" rel="noopener">CSI 300</a></td><td>Trading Economics · 16-oct-2026</td><td>China continental</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.scmp.com/business/banking-finance/article/3339265/chinese-ai-stocks-drive-market-gains-2026-though-pace-set-cool-banks-say" target="_blank" rel="noopener">IA china y bolsas en 2026</a></td><td>SCMP · 9-ene-2026</td><td>Desempeño 2025 y metas</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://investinglive.com/es/acciones/bolsas-europeas-cierran-a-la-baja-dax-mantiene-un-soporte-clave-en-la-media-movil-de-200-dias-ftse-cierra-por-debajo-de-su-media-movil-de-200-dias/" target="_blank" rel="noopener">Bolsas europeas cierran a la baja</a></td><td>investingLive · 1-oct-2026</td><td>Niveles de Europa</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/2026/10/02/bvl-supera-los-60000-puntos-bolsa-limena-abrio-al-alza-junto-a-wall-street/" target="_blank" rel="noopener">BVL supera los 60.000 puntos</a></td><td>Infobae · 2-oct-2026</td><td>Nivel de la BVL</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.infobae.com/peru/2026/06/24/sol-peruano-se-deprecia-y-bolsa-de-valores-cae-hoy-con-fujimori-como-virtual-presidenta-electa-por-que/" target="_blank" rel="noopener">BVL y sol tras la elección</a></td><td>Infobae · 24-jun-2026</td><td>Reacción política</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/cobre-cerca-de-su-maximo-historico-huelgas-en-chile-demanda-de-la-inteligencia-artificial-y-una-fed-que-sube-tasas" target="_blank" rel="noopener">Cobre cerca de su máximo histórico</a></td><td>XTB · 13-oct-2026</td><td>Driver de la BVL</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://gestion.pe/economia/mercados/peru-confirma-posicion-mercado-emergente-indices-msci-233849-noticia/" target="_blank" rel="noopener">Perú confirma su posición en MSCI</a></td><td>Gestión · contexto histórico</td><td>Clasificación MSCI</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://gestion.pe/economia/peru-sera-considerado-como-mercado-frontera-de-acuerdo-a-ftse-noticia/" target="_blank" rel="noopener">FTSE considera a Perú mercado frontera</a></td><td>Gestión · contexto histórico</td><td>Clasificación FTSE</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://es.euronews.com/2026/10/05/b3-se-dispara-tras-bolsonaro-la-bolsa-sube-tras-bolsonaro-ibovespa-gana-8-tras-bolsonaro" target="_blank" rel="noopener">Ibovespa +8% tras Bolsonaro</a></td><td>Euronews · 5-oct-2026</td><td>Brasil y elecciones</td><td><span class="pill read">Leído</span></td></tr>
+
+            <tr class="group"><td colspan="4">Gestores</td></tr>
+            <tr><td><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/asset-allocation/" target="_blank" rel="noopener">Global Asset Allocation Views 4T-2026</a></td><td>J.P. Morgan AM</td><td>Posicionamiento por región</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://am.jpmorgan.com/hk/en/asset-management/institutional/insights/portfolio-insights/asset-class-views/fixed-income/" target="_blank" rel="noopener">Global Fixed Income Views 4T-2026</a></td><td>J.P. Morgan AM</td><td>Duración y crédito</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/guide-to-the-markets/mi-guide-to-the-markets-us.pdf" target="_blank" rel="noopener">Guide to the Markets (PDF)</a></td><td>J.P. Morgan AM</td><td>Gráficos de valuación, tasas y flujos</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://am.gs.com/en-us/advisors/insights/article/market-know-how" target="_blank" rel="noopener">Market Know-How 4T-2026</a></td><td>Goldman Sachs AM · 6-oct-2026</td><td>Visión multiactivo</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://am.gs.com/en-sg/advisors/insights/article/fixed-income-outlook" target="_blank" rel="noopener">Fixed Income Outlook 4T-2026</a></td><td>Goldman Sachs AM</td><td>Renta fija</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.blackrock.com/uk/professionals/solutions/blackrock-investment-institute/publications/outlook" target="_blank" rel="noopener">2026 Midyear Global Outlook</a></td><td>BlackRock · jun-2026</td><td>Temas de inversión</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://advisors.ubs.com/mediahandler/media/823469/UBS%20House%20View%20for%20August%202026.pdf" target="_blank" rel="noopener">House View agosto 2026 (PDF)</a></td><td>UBS GWM</td><td>Metas por región y sector</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://research-center.amundi.com/article/2026-mid-year-outlook" target="_blank" rel="noopener">Mid-Year Outlook 2026</a></td><td>Amundi · 29-jun-2026</td><td>Visión europea</td><td><span class="pill read">Leído</span></td></tr>
+            <tr><td><a href="https://www.vanguard.co.uk/professional/vanguard-economic-and-market-outlook" target="_blank" rel="noopener">Economic and Market Outlook: midyear</a></td><td>Vanguard</td><td>Visión de largo plazo</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.morganstanley.com/insights/articles/investment-outlook-midyear-2026" target="_blank" rel="noopener">2026 Midyear Investment Outlook</a></td><td>Morgan Stanley</td><td>Metas del S&amp;P</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.pimco.com/us/en/insights/growth-holds-risks-widen" target="_blank" rel="noopener">Growth Holds, Risks Widen</a></td><td>PIMCO</td><td>Renta fija global</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.schroders.com/en-gr/gr/professional/insights/our-multi-asset-investment-views-july-2026" target="_blank" rel="noopener">Multi-asset investment views, julio 2026</a></td><td>Schroders</td><td>Visión multiactivo</td><td><span class="pill">Ubicado</span></td></tr>
+
+            <tr class="group"><td colspan="4">Material de estudio</td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-concepts-basic-tools" target="_blank" rel="noopener">Equity Valuation: Concepts and Basic Tools</a></td><td>CFA Institute · 2026</td><td>DDM, múltiplos, conceptos base</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-applications-and-processes" target="_blank" rel="noopener">Equity Valuation: Applications and Processes</a></td><td>CFA Institute · 2026</td><td>Proceso de valorización</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/free-cash-flow-valuation" target="_blank" rel="noopener">Free Cash Flow Valuation</a></td><td>CFA Institute · 2026</td><td>FCFF y FCFE</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/capital-structure" target="_blank" rel="noopener">Capital Structure</a></td><td>CFA Institute · 2026</td><td>Apalancamiento y costo de capital</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-risk-return-part-2" target="_blank" rel="noopener">Portfolio Risk and Return: Part II</a></td><td>CFA Institute · 2026</td><td>CAPM, beta, Sharpe</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/yield-based-bond-duration-measures-and-properties" target="_blank" rel="noopener">Yield-Based Bond Duration Measures</a></td><td>CFA Institute · 2026</td><td>Duración</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/yield-based-bond-convexity-and-portfolio-properties" target="_blank" rel="noopener">Yield-Based Bond Convexity</a></td><td>CFA Institute · 2026</td><td>Convexidad</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/pricing-and-valuation-of-forward-commitments" target="_blank" rel="noopener">Pricing and Valuation of Forward Commitments</a></td><td>CFA Institute · 2026</td><td>Forwards</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/pricing-valuation-futures-contracts" target="_blank" rel="noopener">Pricing and Valuation of Futures Contracts</a></td><td>CFA Institute · 2026</td><td>Futuros</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/swaps-forwards-futures-strategies" target="_blank" rel="noopener">Swaps, Forwards, and Futures Strategies</a></td><td>CFA Institute · 2026</td><td>Cobertura de portafolios</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/option-replication-using-put-call-parity" target="_blank" rel="noopener">Option Replication Using Put–Call Parity</a></td><td>CFA Institute · 2026</td><td>Paridad put-call</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/en/membership/professional-development/refresher-readings/valuing-derivative-one-period-binomial-model" target="_blank" rel="noopener">Valuing a Derivative Using a One-Period Binomial Model</a></td><td>CFA Institute</td><td>Árbol binomial</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/valuation-contingent-claims" target="_blank" rel="noopener">Valuation of Contingent Claims</a></td><td>CFA Institute · 2026</td><td>Black-Scholes y griegas</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html" target="_blank" rel="noopener">Country Default Spreads and Risk Premiums</a></td><td>Damodaran, NYU Stern</td><td>Riesgo país de Perú</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histimpl.html" target="_blank" rel="noopener">Historical Implied Equity Risk Premiums</a></td><td>Damodaran, NYU Stern</td><td>Prima de mercado</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/Put%E2%80%93call_parity" target="_blank" rel="noopener">Put–call parity</a></td><td>Wikipedia</td><td>Derivación y ejemplos</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/Information_ratio" target="_blank" rel="noopener">Information ratio</a></td><td>Wikipedia</td><td>Definición y uso</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://www.optiver.com/insights/explainers/option-greeks/" target="_blank" rel="noopener">Option Greeks</a></td><td>Optiver</td><td>Griegas explicadas por un market maker</td><td><span class="pill">Ubicado</span></td></tr>
+            <tr><td><a href="https://macrohive.com/hive-explainers/duration-and-convexity-in-bond-markets" target="_blank" rel="noopener">Duration and convexity in bond markets</a></td><td>Macro Hive</td><td>Repaso de duración</td><td><span class="pill">Ubicado</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">Preparado el 18 de octubre de 2026 para la entrevista de práctica en Inversiones de AFP Habitat Perú. Datos de mercado al 16 de octubre salvo indicación. Material de estudio, no recomendación de inversión.</div>
+</footer>
+
+<script>
+(function(){
+  var reduce = false;
+  try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e){}
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('[role="tabpanel"]'));
+  var ids = tabs.map(function(t){ return t.getAttribute('data-tab'); });
+
+  function show(id, focusTab){
+    if (ids.indexOf(id) === -1) id = ids[0];
+    tabs.forEach(function(t){
+      var on = t.getAttribute('data-tab') === id;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      if (on && focusTab) t.focus();
+    });
+    panels.forEach(function(p){ p.hidden = (p.id !== 'panel-' + id); });
+    try { localStorage.setItem('habitat-tab', id); } catch(e){}
+    try { if (location.hash.slice(1) !== id) history.replaceState(null, '', '#' + id); } catch(e){}
+  }
+  function scrollToEl(el){
+    if (!el) return;
+    el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  }
+  function tabTop(){
+    var bar = document.querySelector('.tabbar');
+    var y = bar.getBoundingClientRect().top + window.pageYOffset;
+    if (window.pageYOffset > y) window.scrollTo({ top: y, behavior: 'auto' });
+  }
+
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ show(t.getAttribute('data-tab')); tabTop(); });
+    t.addEventListener('keydown', function(e){
+      var k = e.key, n = null;
+      if (k === 'ArrowRight') n = (i + 1) % tabs.length;
+      else if (k === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+      else if (k === 'Home') n = 0;
+      else if (k === 'End') n = tabs.length - 1;
+      if (n !== null){ e.preventDefault(); show(tabs[n].getAttribute('data-tab'), true); }
+    });
+  });
+
+  var initial = location.hash.slice(1);
+  if (ids.indexOf(initial) === -1){ try { initial = localStorage.getItem('habitat-tab'); } catch(e){ initial = null; } }
+  show(initial || ids[0]);
+  window.addEventListener('hashchange', function(){ var h = location.hash.slice(1); if (ids.indexOf(h) !== -1) show(h); });
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-goto]');
+    if (!b) return;
+    e.preventDefault();
+    var tab = b.getAttribute('data-goto');
+    var target = b.getAttribute('data-target');
+    show(tab);
+    var el = target ? document.getElementById(target) : document.getElementById('panel-' + tab);
+    if (el && el.tagName === 'DETAILS'){
+      el.hidden = false; el.open = true;
+    }
+    if (!target) { tabTop(); return; }
+    requestAnimationFrame(function(){ scrollToEl(el); });
+  });
+
+  /* Checklist */
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.step input[type="checkbox"]'));
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem('habitat-steps') || '{}') || {}; } catch(e){ saved = {}; }
+  var bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function progress(){
+    var done = 0;
+    boxes.forEach(function(b){
+      var li = b.closest('.step');
+      if (b.checked){ done++; li.classList.add('done'); } else { li.classList.remove('done'); }
+    });
+    bar.style.width = (done / boxes.length * 100) + '%';
+    txt.textContent = done + ' de ' + boxes.length + ' pasos';
+  }
+  boxes.forEach(function(b){
+    b.checked = !!saved[b.id];
+    b.addEventListener('change', function(){
+      saved[b.id] = b.checked;
+      try { localStorage.setItem('habitat-steps', JSON.stringify(saved)); } catch(e){}
+      progress();
+    });
+  });
+  progress();
+
+  /* Q&A filter */
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.qa-chip'));
+  var search = document.getElementById('qa-search');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.qa-item'));
+  var count = document.getElementById('qa-count');
+  var empty = document.getElementById('qa-empty');
+  var toggle = document.getElementById('qa-toggle');
+  function norm(s){ return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  var texts = items.map(function(it){ return norm(it.textContent); });
+  function apply(){
+    var active = document.querySelector('.qa-chip[aria-pressed="true"]');
+    var cat = active ? active.getAttribute('data-cat') : 'todas';
+    var q = norm(search.value.trim());
+    var n = 0;
+    items.forEach(function(it, i){
+      var ok = (cat === 'todas' || it.getAttribute('data-cat') === cat) && (!q || texts[i].indexOf(q) !== -1);
+      it.hidden = !ok;
+      if (ok) n++;
+    });
+    count.textContent = n + ' de ' + items.length;
+    empty.hidden = n !== 0;
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      chips.forEach(function(x){ x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
+      apply();
+    });
+  });
+  search.addEventListener('input', apply);
+  toggle.addEventListener('click', function(){
+    var visible = items.filter(function(it){ return !it.hidden; });
+    var anyClosed = visible.some(function(it){ return !it.open; });
+    visible.forEach(function(it){ it.open = anyClosed; });
+    toggle.textContent = anyClosed ? 'Cerrar todas' : 'Abrir todas';
+  });
+  apply();
+})();
+</script>
+
+</body></html>
